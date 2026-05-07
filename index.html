@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acharya Guru Ji – Love Problem Solution UK & Canada | #1 Expert Astrologer</title>
+  <meta name="description"
+    content="Struggling in love? Acharya Guru Ji is a world-renowned astrologer serving UK & Canada. Get your ex back, solve marriage problems & relationship conflicts with guaranteed confidential guidance." />
+  <meta name="keywords"
+    content="love problem solution UK, relationship astrologer Canada, get ex back astrologer UK, marriage problem solution, love astrologer London, breakup solution Toronto" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Nunito:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="shortcut icon" href="./assets/logo.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ══════════════════════════════════════
+     STICKY HEADER
+══════════════════════════════════════ -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <div class="logo">
+        <div class="logo-emblem"><i class="fa-solid fa-star-and-crescent"></i></div>
+        <div class="logo-text">
+          <span class="logo-main">Acharya Guru Ji</span>
+          <span class="logo-sub">Vedic Astrologer</span>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="./services/love-spell.html">Love Spell Services</a>
+        <a href="#about">About</a>
+        <a href="#proof">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="tel:+447700000000" class="header-call">
+        <i class="fa-solid fa-phone-volume"></i>
+        <span>Call Now</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mob-close" onclick="closeMobileNav()"><i class="fa-solid fa-xmark"></i></button>
+    <a href="./services/love-spell.html" onclick="closeMobileNav()">Love Spell Services</a>
+    <a href="#about" onclick="closeMobileNav()">About Guru Ji</a>
+    <a href="#proof" onclick="closeMobileNav()">Testimonials</a>
+    <a href="#contact" onclick="closeMobileNav()">Contact</a>
+    <a href="tel:+447700000000" class="mob-call"><i class="fa-solid fa-phone"></i> Call Now</a>
+    <a href="https://wa.me/447700000000" class="mob-wa" target="_blank"><i class="fa-brands fa-whatsapp"></i>
+      WhatsApp</a>
+  </div>
+
+  <!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+  <section class="hero" id="home">
+
+    <canvas id="starCanvas"></canvas>
+    <div class="hero-nebula n1"></div>
+    <div class="hero-nebula n2"></div>
+    <div class="hero-nebula n3"></div>
+    <div class="hero-vignette"></div>
+
+    <div class="heroCtnr">
+
+      <div class="hero-content">
+        <div class="hero-pill">
+          <i class="fa-solid fa-certificate"></i>
+          Trusted by 10,000+ Clients &nbsp;🇬🇧 UK &nbsp;·&nbsp; 🇨🇦 Canada
+        </div>
+        <h1 class="hero-h1">
+          Is Your Love<br />
+          <span class="gold-stroke">Slipping Away?</span>
+        </h1>
+        <p class="hero-tagline">The Stars Hold the Answer — <em>and So Does Acharya Guru Ji</em></p>
+        <p class="hero-desc">
+          World-renowned Vedic astrologer. 15+ years of practice. Thousands of broken hearts healed across London,
+          Toronto, Birmingham, Vancouver &amp; beyond.
+        </p>
+        <div class="hero-ctas">
+          <a href="tel:+447700000000" class="btn-primary-hero">
+            <i class="fa-solid fa-phone-volume"></i> Talk to Guru Ji Now
+          </a>
+          <a href="https://wa.me/447700000000?text=Hello%20Acharya%20Guru%20Ji%2C%20I%20need%20help%20with%20my%20love%20problem"
+            target="_blank" class="btn-wa-hero">
+            <i class="fa-brands fa-whatsapp"></i> Get Solution on WhatsApp
+          </a>
+        </div>
+        <div class="hero-trust-pills">
+          <span><i class="fa-solid fa-lock"></i> 100% Confidential</span>
+          <span><i class="fa-solid fa-bolt"></i> Fast Results</span>
+          <span><i class="fa-solid fa-shield-halved"></i> GDPR Compliant</span>
+          <span><i class="fa-solid fa-clock"></i> Available 24/7</span>
+        </div>
+      </div>
+
+      <div class="astro-wheel-wrap" aria-hidden="true">
+        <div class="chakra-wrap" role="img" aria-label="Rotating Vedic astrology chakra with planetary orbits">
+          <canvas id="chakra-canvas" width="480" height="480"></canvas>
+
+          <div class="chakra-om-label" aria-hidden="true">
+            <span class="chakra-om">ॐ</span>
+            <span class="chakra-sub">Acharya Guruji</span>
+          </div>
+
+          <div class="chakra-tooltip" id="chakra-tooltip" role="tooltip" aria-live="polite">
+            <span class="chakra-tooltip-name" id="chakra-tt-name"></span>
+            <span class="chakra-tooltip-desc" id="chakra-tt-desc"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span class="scroll-line"></span>
+      <span class="scroll-label">SCROLL</span>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+     TRUST TICKER
+══════════════════════════════════════ -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span class="t-item"><i class="fa-solid fa-star"></i> 10,000+ Happy Clients</span>
+      <span class="t-sep">✦</span>
+      <span class="t-item"><i class="fa-solid fa-star"></i> 4.9 / 5 Star Rating</span>
+      <span class="t-sep">✦</span>
+      <span class="t-item"><i class="fa-solid fa-shield-halved"></i> 100% Confidential</span>
+      <span class="t-sep">✦</span>
+      <span class="t-item"><i class="fa-solid fa-earth-europe"></i> UK &amp; Canada Specialist</span>
+      <span class="t-sep">✦</span>
+      <span class="t-item"><i class="fa-solid fa-clock"></i> 24 / 7 Available</span>
+      <span class="t-sep">✦</span>
+      <span class="t-item"><i class="fa-solid fa-medal"></i> 15+ Years Experience</span>
+      <span class="t-sep">✦</span>
+      <!-- duplicate for seamless -->
+      <span class="t-item"><i class="fa-solid fa-star"></i> 10,000+ Happy Clients</span>
+      <span class="t-sep">✦</span>
+      <span class="t-item"><i class="fa-solid fa-star"></i> 4.9 / 5 Star Rating</span>
+      <span class="t-sep">✦</span>
+      <span class="t-item"><i class="fa-solid fa-shield-halved"></i> 100% Confidential</span>
+      <span class="t-sep">✦</span>
+      <span class="t-item"><i class="fa-solid fa-earth-europe"></i> UK &amp; Canada Specialist</span>
+      <span class="t-sep">✦</span>
+      <span class="t-item"><i class="fa-solid fa-clock"></i> 24 / 7 Available</span>
+      <span class="t-sep">✦</span>
+      <span class="t-item"><i class="fa-solid fa-medal"></i> 15+ Years Experience</span>
+      <span class="t-sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+     PAIN POINTS
+══════════════════════════════════════ -->
+  <section class="pain-section reveal">
+    <div class="container">
+      <p class="eyebrow center"><i class="fa-solid fa-heart-crack"></i> ARE YOU GOING THROUGH THIS?</p>
+      <h2 class="sec-title center">You Don't Have to Suffer Alone</h2>
+      <div class="pain-grid">
+        <div class="pain-card">
+          <div class="pain-icon-wrap"><i class="fa-solid fa-heart-broken"></i></div>
+          <h4>Painful Breakup</h4>
+          <p>Your partner left and life feels impossible. The pain is unbearable every single day.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon-wrap"><i class="fa-solid fa-rotate-left"></i></div>
+          <h4>Ex Won't Return</h4>
+          <p>You've tried everything — calls, texts, apologies. Nothing works. They seem to have moved on.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon-wrap"><i class="fa-solid fa-ring"></i></div>
+          <h4>Marriage Problems</h4>
+          <p>Constant fights, no intimacy, divorce looming. Your family is slowly falling apart.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon-wrap"><i class="fa-solid fa-eye"></i></div>
+          <h4>Partner Cheating</h4>
+          <p>Suspicion, betrayal, broken trust. You don't know what's real or who to believe anymore.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon-wrap"><i class="fa-solid fa-people-arrows"></i></div>
+          <h4>Family Opposition</h4>
+          <p>True love blocked by families who won't accept your partner. You feel trapped and helpless.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon-wrap"><i class="fa-solid fa-moon"></i></div>
+          <h4>Negative Energy</h4>
+          <p>Something dark is blocking your love. Third party interference destroying everything you built.</p>
+        </div>
+      </div>
+      <div class="pain-bottom-cta">
+        <p>The stars have already written your solution. <strong>Guru Ji will reveal it to you.</strong></p>
+        <a href="https://wa.me/447700000000" target="_blank" class="btn-gold">
+          <i class="fa-brands fa-whatsapp"></i> Get Your Solution Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     ABOUT ASTROLOGER
+══════════════════════════════════════ -->
+  <section class="about-section reveal" id="about">
+    <div class="about-deco-ring r1"></div>
+    <div class="about-deco-ring r2"></div>
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-frame">
+          <div class="about-frame-glow"></div>
+          <div class="about-photo-wrap">
+            <!-- <img src="./assets/IMG-removebg.png" alt="Acharya ji photo" srcset=""> -->
+
+            <!-- <div class="guru-placeholder">
+              <div class="guru-aura"></div>
+              <i class="fa-solid fa-om guru-om"></i>
+              <p class="guru-name-label">Acharya Guru Ji</p>
+              <p class="guru-sub-label"><i class="fa-solid fa-image"></i> Add Photo Here</p>
+            </div> -->
+
+          </div>
+          <div class="about-badge">
+            <span class="ab-num">15+</span>
+            <span class="ab-txt">Years of<br />Wisdom</span>
+          </div>
+          <div class="orbit-dot od1"><i class="fa-solid fa-star"></i></div>
+          <div class="orbit-dot od2"><i class="fa-solid fa-moon"></i></div>
+          <div class="orbit-dot od3"><i class="fa-solid fa-sun"></i></div>
+          <div class="orbit-dot od4"><i class="fa-solid fa-sparkles"></i></div>
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="eyebrow"><i class="fa-solid fa-wand-magic-sparkles"></i> MEET YOUR GUIDE</p>
+        <h2 class="sec-title">Acharya Guru Ji</h2>
+        <p class="about-role">
+          <i class="fa-solid fa-circle-dot"></i> Vedic Astrologer &amp; Love Specialist &nbsp;|&nbsp;
+          <i class="fa-solid fa-circle-dot"></i> Global Consultant
+        </p>
+        <p class="about-desc">With over <strong>15 years of profound practice</strong> in Vedic astrology, Acharya Guru
+          Ji has transformed thousands of lives across the United Kingdom, Canada, USA, Australia and beyond. His
+          mastery in Kundli analysis, planetary energy healing, and relationship sciences has made him the most
+          sought-after astrologer for love problems in the UK-Canada diaspora.</p>
+        <p class="about-desc">Studying under the guidance of ancient Vedic masters, Guru Ji combines centuries-old
+          wisdom with a deep understanding of modern relationship dynamics — delivering solutions that work with
+          remarkable speed and precision.</p>
+        <div class="stats-row">
+          <div class="stat-item">
+            <i class="fa-solid fa-users"></i>
+            <span class="snum" data-target="10000">0</span><span class="ssuf">+</span>
+            <span class="slbl">Happy Clients</span>
+          </div>
+          <div class="stat-item">
+            <i class="fa-solid fa-award"></i>
+            <span class="snum" data-target="15">0</span><span class="ssuf">+</span>
+            <span class="slbl">Years Experience</span>
+          </div>
+          <div class="stat-item">
+            <i class="fa-solid fa-earth-americas"></i>
+            <span class="snum" data-target="25">0</span><span class="ssuf">+</span>
+            <span class="slbl">Countries</span>
+          </div>
+          <div class="stat-item">
+            <i class="fa-solid fa-heart"></i>
+            <span class="snum" data-target="98">0</span><span class="ssuf">%</span>
+            <span class="slbl">Satisfaction</span>
+          </div>
+        </div>
+        <a href="https://wa.me/447700000000" target="_blank" class="btn-gold">
+          <i class="fa-brands fa-whatsapp"></i> Consult Guru Ji —
+          <!-- Free First Session -->
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     SERVICES
+══════════════════════════════════════ -->
+  <section class="services-section reveal" id="services">
+    <div class="container">
+      <p class="eyebrow center"><i class="fa-solid fa-star-of-david"></i> WHAT WE SOLVE</p>
+      <h2 class="sec-title center">Ancient Solutions for Modern Love Problems</h2>
+      <p class="sec-sub center">Every situation is unique. Guru Ji provides personalized cosmic guidance tailored to
+        your birth chart.</p>
+      <div class="svc-grid">
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fa-solid fa-heart"></i></div>
+          <h3>Love Problem Solution</h3>
+          <p>Resolve deep-rooted conflicts, misunderstandings and emotional distance through powerful planetary
+            remedies.</p>
+          <a href="https://wa.me/447700000000" target="_blank" class="svc-link">Get Help <i
+              class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="svc-card featured">
+          <div class="svc-hot-badge">🔥 Most Popular</div>
+          <div class="svc-icon"><i class="fa-solid fa-rotate-left"></i></div>
+          <h3>Get Your Ex Back</h3>
+          <p>Through cosmic alignment and personalised remedies, bring your loved one back — even if they've blocked you
+            everywhere.</p>
+          <a href="https://wa.me/447700000000" target="_blank" class="svc-link">Get Help <i
+              class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fa-solid fa-ring"></i></div>
+          <h3>Marriage Issues</h3>
+          <p>Constant fights, lack of intimacy, separation fears? Restore harmony and love through deep astral healing.
+          </p>
+          <a href="https://wa.me/447700000000" target="_blank" class="svc-link">Get Help <i
+              class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Relationship Conflicts</h3>
+          <p>Family opposition, long-distance strain, trust issues — clear all obstacles from your love life
+            permanently.</p>
+          <a href="https://wa.me/447700000000" target="_blank" class="svc-link">Get Help <i
+              class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3>Negative Energy Removal</h3>
+          <p>Black magic, evil eye, and third-party interference blocking your relationship — permanently removed and
+            cleansed.</p>
+          <a href="https://wa.me/447700000000" target="_blank" class="svc-link">Get Help <i
+              class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon"><i class="fa-solid fa-scroll"></i></div>
+          <h3>Kundli Analysis</h3>
+          <p>Detailed birth chart analysis revealing your love destiny, compatibility, and the exact path forward for
+            your situation.</p>
+          <a href="https://wa.me/447700000000" target="_blank" class="svc-link">Get Help <i
+              class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     HOW IT WORKS
+══════════════════════════════════════ -->
+  <section class="how-section reveal">
+    <div class="container">
+      <p class="eyebrow center"><i class="fa-solid fa-wand-sparkles"></i> SIMPLE PROCESS</p>
+      <h2 class="sec-title center">3 Steps to Reclaim Your Love</h2>
+      <div class="steps-row">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="step-ico"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3>Contact Guru Ji</h3>
+          <p>Call or WhatsApp anytime. Share your situation in complete confidence — every detail stays private.</p>
+        </div>
+        <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i><i
+            class="fa-solid fa-chevron-right"></i></div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="step-ico"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          <h3>Cosmic Analysis</h3>
+          <p>Guru Ji analyses your birth chart, planetary positions, and relationship energies to find the precise
+            blockage.</p>
+        </div>
+        <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i><i
+            class="fa-solid fa-chevron-right"></i></div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="step-ico"><i class="fa-solid fa-star-and-crescent"></i></div>
+          <h3>Receive Your Solution</h3>
+          <p>Get a powerful, personalised remedy. Follow it with faith and see love return to your life within days.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     WHATSAPP PROOF — 6 SCREENSHOTS
+══════════════════════════════════════ -->
+  <section class="wa-section reveal" id="proof">
+    <div class="container">
+      <p class="eyebrow center"><i class="fa-brands fa-whatsapp"></i> REAL CLIENT MESSAGES</p>
+      <h2 class="sec-title center">WhatsApp Proof — Real People, Real Results</h2>
+      <p class="sec-sub center">Genuine WhatsApp conversations from clients in UK &amp; Canada. Names shortened for
+        privacy.</p>
+      <div class="wa-grid">
+
+        <!-- WA Card 1 -->
+        <!-- <div class="wa-card">
+          <div class="wa-phone">
+            <div class="wa-notch"></div>
+            <div class="wa-header">
+              <i class="fa-solid fa-arrow-left wa-back-ico"></i>
+              <div class="wa-pfp"><i class="fa-solid fa-om"></i></div>
+              <div class="wa-hinfo">
+                <strong>Acharya Guru Ji</strong>
+                <span><i class="fa-solid fa-circle online-dot"></i> online</span>
+              </div>
+              <div class="wa-hicons">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="wa-body">
+              <div class="wa-date-chip">Today</div>
+              <div class="wa-bub received">
+                <p>Guru ji I am Emily from London. My boyfriend broke up with me 2 months ago and blocked me everywhere.
+                  I feel like I am dying inside 😭</p>
+                <span class="wa-ts">10:14 <i class="fa-solid fa-check-double"></i></span>
+              </div>
+              <div class="wa-bub sent">
+                <p>Don't worry Emily ji. This is a planetary effect only, not permanent. Share your date of birth — we
+                  will start the remedy today itself.</p>
+                <span class="wa-ts">10:17 <i class="fa-solid fa-check-double tick-blue"></i></span>
+              </div>
+              <div class="wa-bub received result">
+                <p>🌟 <strong>Sir he unblocked me and called last night 😭😭 He said he loves me and wants to meet!! I
+                    can't stop crying. THANK YOU SO MUCH GURU JI 🙏🙏</strong></p>
+                <span class="wa-ts">3 weeks later · 9:02 <i class="fa-solid fa-check-double"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="wa-tag">🇬🇧 Emily R. — London, UK</div>
+        </div> -->
+
+        <!-- WA Card 2 -->
+        <div class="wa-card">
+          <div class="wa-phone">
+            <div class="wa-notch"></div>
+            <img src="./assets/screenshots/wp-1.jpeg" alt="" srcset="">
+            <!-- <div class="wa-header">
+              <i class="fa-solid fa-arrow-left wa-back-ico"></i>
+              <div class="wa-pfp"><i class="fa-solid fa-om"></i></div>
+              <div class="wa-hinfo">
+                <strong>Acharya Guru Ji</strong>
+                <span><i class="fa-solid fa-circle online-dot"></i> online</span>
+              </div>
+              <div class="wa-hicons">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="wa-body">
+              <div class="wa-date-chip">Yesterday</div>
+              <div class="wa-bub received">
+                <p>Guru ji my husband and I were on the verge of divorce. He was talking to someone else. I was
+                  completely shattered 💔</p>
+                <span class="wa-ts">2:30 <i class="fa-solid fa-check-double"></i></span>
+              </div>
+              <div class="wa-bub sent">
+                <p>This is a third-party interference case beta. Follow my remedy for 11 days with full faith and
+                  observe the transformation.</p>
+                <span class="wa-ts">2:35 <i class="fa-solid fa-check-double tick-blue"></i></span>
+              </div>
+              <div class="wa-bub received result">
+                <p>🌟 <strong>This really worked for me 🙏 My husband cut off that person &amp; apologised to me with
+                    tears! We are going for counselling together. You SAVED my family Guru ji!! 💕</strong></p>
+                <span class="wa-ts">11 days later · 8:45 <i class="fa-solid fa-check-double"></i></span>
+              </div>
+            </div> -->
+          </div>
+          <div class="wa-tag">🇨🇦 Priya M. — Toronto, Canada</div>
+        </div>
+
+        <div class="wa-card">
+          <div class="wa-phone">
+            <div class="wa-notch"></div>
+            <img src="./assets/screenshots/wp-1.jpeg" alt="" srcset="">
+            <!-- <div class="wa-header">
+              <i class="fa-solid fa-arrow-left wa-back-ico"></i>
+              <div class="wa-pfp"><i class="fa-solid fa-om"></i></div>
+              <div class="wa-hinfo">
+                <strong>Acharya Guru Ji</strong>
+                <span><i class="fa-solid fa-circle online-dot"></i> online</span>
+              </div>
+              <div class="wa-hicons">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="wa-body">
+              <div class="wa-date-chip">Yesterday</div>
+              <div class="wa-bub received">
+                <p>Guru ji my husband and I were on the verge of divorce. He was talking to someone else. I was
+                  completely shattered 💔</p>
+                <span class="wa-ts">2:30 <i class="fa-solid fa-check-double"></i></span>
+              </div>
+              <div class="wa-bub sent">
+                <p>This is a third-party interference case beta. Follow my remedy for 11 days with full faith and
+                  observe the transformation.</p>
+                <span class="wa-ts">2:35 <i class="fa-solid fa-check-double tick-blue"></i></span>
+              </div>
+              <div class="wa-bub received result">
+                <p>🌟 <strong>This really worked for me 🙏 My husband cut off that person &amp; apologised to me with
+                    tears! We are going for counselling together. You SAVED my family Guru ji!! 💕</strong></p>
+                <span class="wa-ts">11 days later · 8:45 <i class="fa-solid fa-check-double"></i></span>
+              </div>
+            </div> -->
+          </div>
+          <div class="wa-tag">🇨🇦 Priya M. — Toronto, Canada</div>
+        </div>
+
+        <div class="wa-card">
+          <div class="wa-phone">
+            <div class="wa-notch"></div>
+            <img src="./assets/screenshots/wp-1.jpeg" alt="" srcset="">
+            <!-- <div class="wa-header">
+              <i class="fa-solid fa-arrow-left wa-back-ico"></i>
+              <div class="wa-pfp"><i class="fa-solid fa-om"></i></div>
+              <div class="wa-hinfo">
+                <strong>Acharya Guru Ji</strong>
+                <span><i class="fa-solid fa-circle online-dot"></i> online</span>
+              </div>
+              <div class="wa-hicons">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="wa-body">
+              <div class="wa-date-chip">Yesterday</div>
+              <div class="wa-bub received">
+                <p>Guru ji my husband and I were on the verge of divorce. He was talking to someone else. I was
+                  completely shattered 💔</p>
+                <span class="wa-ts">2:30 <i class="fa-solid fa-check-double"></i></span>
+              </div>
+              <div class="wa-bub sent">
+                <p>This is a third-party interference case beta. Follow my remedy for 11 days with full faith and
+                  observe the transformation.</p>
+                <span class="wa-ts">2:35 <i class="fa-solid fa-check-double tick-blue"></i></span>
+              </div>
+              <div class="wa-bub received result">
+                <p>🌟 <strong>This really worked for me 🙏 My husband cut off that person &amp; apologised to me with
+                    tears! We are going for counselling together. You SAVED my family Guru ji!! 💕</strong></p>
+                <span class="wa-ts">11 days later · 8:45 <i class="fa-solid fa-check-double"></i></span>
+              </div>
+            </div> -->
+          </div>
+          <div class="wa-tag">🇨🇦 Priya M. — Toronto, Canada</div>
+        </div>
+
+        <!-- WA Card 3 -->
+        <!-- <div class="wa-card">
+          <div class="wa-phone">
+            <div class="wa-notch"></div>
+            <div class="wa-header">
+              <i class="fa-solid fa-arrow-left wa-back-ico"></i>
+              <div class="wa-pfp"><i class="fa-solid fa-om"></i></div>
+              <div class="wa-hinfo">
+                <strong>Acharya Guru Ji</strong>
+                <span><i class="fa-solid fa-circle online-dot"></i> online</span>
+              </div>
+              <div class="wa-hicons">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="wa-body">
+              <div class="wa-date-chip">2 days ago</div>
+              <div class="wa-bub received">
+                <p>My girlfriend left me for someone else in Birmingham. I thought it was over forever. My friend told
+                  me about you Guru ji</p>
+                <span class="wa-ts">11:02 <i class="fa-solid fa-check-double"></i></span>
+              </div>
+              <div class="wa-bub sent">
+                <p>Jai Shri Ram brother. The stars show very strong love between you both. This is completely
+                  reversible. Let's begin today.</p>
+                <span class="wa-ts">11:09 <i class="fa-solid fa-check-double tick-blue"></i></span>
+              </div>
+              <div class="wa-bub received result">
+                <p>🌟 <strong>Guru ji she left that person and came back crying saying she made a huge mistake!! I am
+                    literally shaking writing this. You are a MIRACLE WORKER 🙏🙏</strong></p>
+                <span class="wa-ts">18 days later · 7:15 <i class="fa-solid fa-check-double"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="wa-tag">🇬🇧 Jason M. — Birmingham, UK</div>
+        </div> -->
+
+        <!-- WA Card 4 -->
+        <!-- <div class="wa-card">
+          <div class="wa-phone">
+            <div class="wa-notch"></div>
+            <div class="wa-header">
+              <i class="fa-solid fa-arrow-left wa-back-ico"></i>
+              <div class="wa-pfp"><i class="fa-solid fa-om"></i></div>
+              <div class="wa-hinfo">
+                <strong>Acharya Guru Ji</strong>
+                <span><i class="fa-solid fa-circle online-dot"></i> online</span>
+              </div>
+              <div class="wa-hicons">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="wa-body">
+              <div class="wa-date-chip">Last week</div>
+              <div class="wa-bub received">
+                <p>Guru ji my parents have refused our relationship because of caste difference. We love each other but
+                  can't be together 🙏</p>
+                <span class="wa-ts">6:44 <i class="fa-solid fa-check-double"></i></span>
+              </div>
+              <div class="wa-bub sent">
+                <p>Beta this is a family harmony case. I will perform a specific Kundli remedy for both families. Trust
+                  the cosmic process fully.</p>
+                <span class="wa-ts">6:50 <i class="fa-solid fa-check-double tick-blue"></i></span>
+              </div>
+              <div class="wa-bub received result">
+                <p>🌟 <strong>GURU JI MY PARENTS GAVE THEIR BLESSING 😭🙏 They called his family themselves!! We are
+                    getting ENGAGED next month. You changed our lives forever!! 🌸</strong></p>
+                <span class="wa-ts">1 month later · 10:30 <i class="fa-solid fa-check-double"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="wa-tag">🇨🇦 Aisha K. — Vancouver, Canada</div>
+        </div> -->
+
+        <!-- WA Card 5 -->
+        <!-- <div class="wa-card">
+          <div class="wa-phone">
+            <div class="wa-notch"></div>
+            <div class="wa-header">
+              <i class="fa-solid fa-arrow-left wa-back-ico"></i>
+              <div class="wa-pfp"><i class="fa-solid fa-om"></i></div>
+              <div class="wa-hinfo">
+                <strong>Acharya Guru Ji</strong>
+                <span><i class="fa-solid fa-circle online-dot"></i> online</span>
+              </div>
+              <div class="wa-hicons">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="wa-body">
+              <div class="wa-date-chip">3 days ago</div>
+              <div class="wa-bub received">
+                <p>Sir my long distance relationship ended after 3 years. He moved on very fast and said he doesn't love
+                  me anymore. I am totally broken 😭</p>
+                <span class="wa-ts">4:20 <i class="fa-solid fa-check-double"></i></span>
+              </div>
+              <div class="wa-bub sent">
+                <p>Distance creates illusions. His real feelings haven't gone — they are suppressed by Saturn's
+                  position. My remedy will remove this blockage.</p>
+                <span class="wa-ts">4:27 <i class="fa-solid fa-check-double tick-blue"></i></span>
+              </div>
+              <div class="wa-bub received result">
+                <p>🌟 <strong>GURU JI HE BOOKED A FLIGHT TO COME SEE ME 😭😭 Said he made a huge mistake and loves ONLY
+                    me!! I am crying tears of joy. THANK YOU FROM MY HEART ❤️🙏</strong></p>
+                <span class="wa-ts">2 weeks later · 1:18 <i class="fa-solid fa-check-double"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="wa-tag">🇬🇧 Sarah L. — Manchester, UK</div>
+        </div> -->
+
+        <!-- WA Card 6 -->
+        <!-- <div class="wa-card">
+          <div class="wa-phone">
+            <div class="wa-notch"></div>
+            <div class="wa-header">
+              <i class="fa-solid fa-arrow-left wa-back-ico"></i>
+              <div class="wa-pfp"><i class="fa-solid fa-om"></i></div>
+              <div class="wa-hinfo">
+                <strong>Acharya Guru Ji</strong>
+                <span><i class="fa-solid fa-circle online-dot"></i> online</span>
+              </div>
+              <div class="wa-hicons">
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="wa-body">
+              <div class="wa-date-chip">Last month</div>
+              <div class="wa-bub received">
+                <p>Guru ji I think black magic has been done on my marriage. My husband changed overnight — became very
+                  cold and cruel 😔</p>
+                <span class="wa-ts">9:05 <i class="fa-solid fa-check-double"></i></span>
+              </div>
+              <div class="wa-bub sent">
+                <p>Your instinct is correct. This is a clear negative energy case. I will perform a cleansing ritual
+                  tonight. Do not panic — this is fixable.</p>
+                <span class="wa-ts">9:11 <i class="fa-solid fa-check-double tick-blue"></i></span>
+              </div>
+              <div class="wa-bub received result">
+                <p>🌟 <strong>My husband cried and apologised last night 😭 He said he felt something lift off him. He
+                    is my old husband again. God bless you always Guru ji 🙏🌟</strong></p>
+                <span class="wa-ts">7 days later · 11:44 <i class="fa-solid fa-check-double"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="wa-tag">🇨🇦 Neha P. — Calgary, Canada</div>
+        </div> -->
+
+      </div><!-- /wa-grid -->
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     VIDEO TESTIMONIALS
+══════════════════════════════════════ -->
+  <section class="video-section reveal">
+    <div class="container">
+      <p class="eyebrow center"><i class="fa-solid fa-clapperboard"></i> VIDEO TESTIMONIALS</p>
+      <h2 class="sec-title center">Hear It Directly From Our Clients</h2>
+      <p class="sec-sub center">Real people sharing their journeys — from heartbreak to happiness.</p>
+      <div class="video-grid">
+
+        <div class="video-card" onclick="playVideo(this,'https://www.youtube.com/embed/TL9MtGAcPSI?autoplay=1&mute=1')">
+          <div class="video-thumb">
+            <div class="vthumb-bg vb1"></div>
+            <div class="vthumb-overlay">
+              <div class="play-circle"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="vthumb-deco"><i class="fa-solid fa-star"></i></div>
+            <div class="iframe-wrap">
+              <iframe width="560" height="315" src=""
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="video-meta">
+            <p class="vmeta-quote"><i class="fa-solid fa-quote-left"></i> "I got my ex back in just 21 days"</p>
+            <p class="vmeta-who"><i class="fa-solid fa-location-dot"></i> Emily R. — London, UK 🇬🇧</p>
+            <div class="vmeta-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          </div>
+        </div>
+
+        <div class="video-card" onclick="playVideo(this,'https://www.youtube.com/embed/TL9MtGAcPSI?autoplay=1&mute=1')">
+          <div class="video-thumb">
+            <div class="vthumb-bg vb2"></div>
+            <div class="vthumb-overlay">
+              <div class="play-circle"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="vthumb-deco"><i class="fa-solid fa-moon"></i></div>
+            <div class="iframe-wrap"> 
+              <iframe width="560" height="315" src=""
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="video-meta">
+            <p class="vmeta-quote"><i class="fa-solid fa-quote-left"></i> "My marriage was saved from divorce"</p>
+            <p class="vmeta-who"><i class="fa-solid fa-location-dot"></i> Jason M. — Toronto, Canada 🇨🇦</p>
+            <div class="vmeta-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          </div>
+        </div>
+
+        <div class="video-card" onclick="playVideo(this,'https://www.youtube.com/embed/TL9MtGAcPSI?autoplay=1&mute=1')">
+          <div class="video-thumb">
+            <div class="vthumb-bg vb3"></div>
+            <div class="vthumb-overlay">
+              <div class="play-circle"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <div class="vthumb-deco"><i class="fa-solid fa-heart"></i></div>
+            <div class="iframe-wrap">
+               <iframe width="560" height="315" src=""
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="video-meta">
+            <p class="vmeta-quote"><i class="fa-solid fa-quote-left"></i> "Negative energy removed, love returned"</p>
+            <p class="vmeta-who"><i class="fa-solid fa-location-dot"></i> Priya K. — Vancouver, Canada 🇨🇦</p>
+            <div class="vmeta-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          </div>
+        </div>
+      </div>
+      <!-- <p class="video-note"><i class="fa-solid fa-circle-info"></i> Replace the YouTube links in the HTML with your
+        actual client testimonial video URLs.</p> -->
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     FOREIGN TOUR GALLERY
+══════════════════════════════════════ -->
+  <section class="gallery-section reveal">
+    <div class="container">
+      <p class="eyebrow center"><i class="fa-solid fa-earth-europe"></i> GURU JI'S GLOBAL TOURS</p>
+      <h2 class="sec-title center">Serving Clients Across UK &amp; Canada in Person</h2>
+      <p class="sec-sub center">Acharya Guru Ji visits the UK and Canada regularly to personally meet clients. Our
+        global family grows every year.</p>
+      <div class="gallery-grid">
+
+        <div class="gallery-item gi-tall">
+          <div class="gal-bg g1">
+
+            <!-- <div class="img-wraper"> -->
+
+            <!-- <img src="./assets//gallery/img-c-5.jpeg" alt="" srcset=""> -->
+            <!-- </div> -->
+
+            <div class="gal-overlay">
+              <p><i class="fa-solid fa-location-dot"></i> London, United Kingdom 🇬🇧</p>
+              <span>Client Meet · 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-col-2">
+          <div class="gallery-item gi-short">
+            <div class="gal-bg g2">
+              <!-- <div class="img-wraper"> -->
+
+              <!-- <img src="./assets//gallery/img-r-1.jpeg" alt="" srcset=""> -->
+              <!-- </div> -->
+
+              <div class="gal-overlay">
+                <p><i class="fa-solid fa-location-dot"></i> Toronto, Canada 🇨🇦</p>
+                <span>Consultation Camp</span>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item gi-short">
+            <div class="gal-bg g3">
+              <div class="gal-overlay">
+                <p><i class="fa-solid fa-location-dot"></i> Birmingham, UK 🇬🇧</p>
+                <span>Happy Clients 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item gi-tall">
+          <div class="gal-bg g4">
+            <div class="gal-overlay">
+              <p><i class="fa-solid fa-location-dot"></i> Vancouver, Canada 🇨🇦</p>
+              <span>Community Event</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-col-2">
+          <div class="gallery-item gi-short">
+            <div class="gal-bg g5">
+              <div class="gal-overlay">
+                <p><i class="fa-solid fa-location-dot"></i> Manchester, UK 🇬🇧</p>
+                <span>Spiritual Seminar</span>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item gi-short">
+            <div class="gal-bg g6">
+              <div class="gal-overlay">
+                <p><i class="fa-solid fa-location-dot"></i> Calgary, Canada 🇨🇦</p>
+                <span>Group Session 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <p class="gallery-note"><i class="fa-solid fa-circle-info"></i> Add real tour photos by setting
+        <code>background-image:url('images/photo.jpg')</code> on each <code>.gal-bg</code> element.</p> -->
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     TEXT TESTIMONIALS
+══════════════════════════════════════ -->
+  <section class="testi-section reveal">
+    <div class="container">
+      <p class="eyebrow center"><i class="fa-solid fa-comments"></i> CLIENT REVIEWS</p>
+      <h2 class="sec-title center">Lives Transformed — In Their Own Words</h2>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-top">
+            <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <i class="fa-solid fa-quote-right testi-ico"></i>
+          </div>
+          <p>"I was completely broken after my partner of 4 years left suddenly. Guru Ji's guidance gave me hope when I
+            had none. Within 3 weeks my partner came back and we are stronger than ever. I tell everyone about him."</p>
+          <div class="testi-author">
+            <div class="testi-av">E</div>
+            <div><strong>Emily Richardson</strong><span><i class="fa-solid fa-location-dot"></i> London, UK 🇬🇧</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card testi-featured">
+          <div class="testi-top">
+            <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <i class="fa-solid fa-quote-right testi-ico"></i>
+          </div>
+          <p>"I was sceptical at first but after 3 days of Guru Ji's remedy, my ex called out of nowhere. I cried for an
+            hour. He is the real deal — worth every penny and more. He literally saved my life."</p>
+          <div class="testi-author">
+            <div class="testi-av">J</div>
+            <div><strong>Jason Mitchell</strong><span><i class="fa-solid fa-location-dot"></i> Toronto, Canada
+                🇨🇦</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-top">
+            <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <i class="fa-solid fa-quote-right testi-ico"></i>
+          </div>
+          <p>"My marriage was on the edge of divorce. Constant fighting, no love left at all. Guru Ji identified the
+            negative planetary energy and gave a solution. We are now planning our second honeymoon. 🙏"</p>
+          <div class="testi-author">
+            <div class="testi-av">S</div>
+            <div><strong>Sarah Khan</strong><span><i class="fa-solid fa-location-dot"></i> Manchester, UK 🇬🇧</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-top">
+            <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <i class="fa-solid fa-quote-right testi-ico"></i>
+          </div>
+          <p>"After finding out my partner was cheating I was shattered. Guru Ji not only helped me understand through
+            astrology but gave me real strength and a clear solution. My relationship is beautiful again."</p>
+          <div class="testi-author">
+            <div class="testi-av">R</div>
+            <div><strong>Raj Patel</strong><span><i class="fa-solid fa-location-dot"></i> Vancouver, Canada 🇨🇦</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-top">
+            <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <i class="fa-solid fa-quote-right testi-ico"></i>
+          </div>
+          <p>"My boyfriend had blocked me everywhere. I felt completely invisible. Within 2 weeks of Guru Ji's remedy,
+            he unblocked me and we had a 3-hour call. I am now the happiest girl in Birmingham! 🌟"</p>
+          <div class="testi-author">
+            <div class="testi-av">A</div>
+            <div><strong>Aisha Noor</strong><span><i class="fa-solid fa-location-dot"></i> Birmingham, UK 🇬🇧</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-top">
+            <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <i class="fa-solid fa-quote-right testi-ico"></i>
+          </div>
+          <p>"My parents were completely against our relationship due to caste. Through Guru Ji's family harmony remedy,
+            they gave their blessing within a month. We are getting married next year! Truly forever grateful."</p>
+          <div class="testi-author">
+            <div class="testi-av">M</div>
+            <div><strong>Michael Tran</strong><span><i class="fa-solid fa-location-dot"></i> Calgary, Canada 🇨🇦</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     WHY CHOOSE US
+══════════════════════════════════════ -->
+  <section class="why-section reveal">
+    <div class="container">
+      <p class="eyebrow center"><i class="fa-solid fa-crown"></i> WHY ACHARYA GURU JI</p>
+      <h2 class="sec-title center">What Makes Us the #1 Choice</h2>
+      <div class="why-grid">
+        <div class="why-card"><span class="why-ico"><i class="fa-solid fa-lock"></i></span>
+          <h4>100% Confidential</h4>
+          <p>GDPR &amp; PIPEDA compliant. Your personal details and situation stay private forever.</p>
+        </div>
+        <div class="why-card"><span class="why-ico"><i class="fa-solid fa-bolt-lightning"></i></span>
+          <h4>Fast Results</h4>
+          <p>Most clients see positive shifts within 7–21 days. Some notice changes within just 72 hours.</p>
+        </div>
+        <div class="why-card"><span class="why-ico"><i class="fa-solid fa-globe"></i></span>
+          <h4>UK &amp; Canada Expert</h4>
+          <p>Deep understanding of relationship dynamics within the UK and Canadian diaspora communities.</p>
+        </div>
+        <div class="why-card"><span class="why-ico"><i class="fa-solid fa-phone-volume"></i></span>
+          <h4>Available 24/7</h4>
+          <p>Love problems don't follow a schedule. Reach Guru Ji any time, day or night, every day.</p>
+        </div>
+        <div class="why-card"><span class="why-ico"><i class="fa-solid fa-fingerprint"></i></span>
+          <h4>Personalised Solutions</h4>
+          <p>Every remedy is specifically crafted for your unique birth chart, partner, and situation.</p>
+        </div>
+        <div class="why-card"><span class="why-ico"><i class="fa-solid fa-trophy"></i></span>
+          <h4>Proven Track Record</h4>
+          <p>10,000+ successful cases across 25+ countries. Real documented results, not empty promises.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     FAQ
+══════════════════════════════════════ -->
+  <section class="faq-section reveal">
+    <div class="container faq-layout">
+      <div class="faq-left-col">
+        <p class="eyebrow"><i class="fa-solid fa-circle-question"></i> FAQ</p>
+        <h2 class="sec-title">Common Questions<br />Answered</h2>
+        <p class="faq-side-desc">Still have questions? Talk to Guru Ji directly — free of charge.</p>
+        <a href="https://wa.me/447700000000" target="_blank" class="btn-gold"
+          style="margin-top:1.5rem;display:inline-flex;">
+          <i class="fa-brands fa-whatsapp"></i> Ask on WhatsApp
+        </a>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Does astrology really work for love problems?</span>
+            <i class="fa-solid fa-plus faq-arrow"></i>
+          </button>
+          <div class="faq-a">
+            <p>Yes. Vedic astrology has been used for thousands of years to understand planetary influences on human
+              relationships. Thousands of clients across UK &amp; Canada have seen measurable, real shifts after
+              following Guru Ji's personalised remedies. The process works by aligning cosmic energies to remove
+              obstacles blocking your relationship.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>How fast can I see results?</span>
+            <i class="fa-solid fa-plus faq-arrow"></i>
+          </button>
+          <div class="faq-a">
+            <p>Most clients begin to notice positive changes within 7 to 21 days. Some situations can shift in as little
+              as 72 hours. The timeline depends on the complexity of your situation and the planetary positions at the
+              time of consultation.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Is my information safe and private?</span>
+            <i class="fa-solid fa-plus faq-arrow"></i>
+          </button>
+          <div class="faq-a">
+            <p>Absolutely. All consultations are handled with strictest confidentiality. No personal details are ever
+              shared, stored beyond the consultation, or used for any other purpose. Fully GDPR compliant (UK) and
+              PIPEDA compliant (Canada).</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Can Guru Ji help if my ex is with someone else?</span>
+            <i class="fa-solid fa-plus faq-arrow"></i>
+          </button>
+          <div class="faq-a">
+            <p>Yes — this is one of the most common situations Guru Ji handles. Through planetary remedies and energy
+              realignment, it is possible to shift the situation even when a third party is involved. A specific
+              consultation is needed to analyse your unique case.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>Do I need to believe in astrology for it to work?</span>
+            <i class="fa-solid fa-plus faq-arrow"></i>
+          </button>
+          <div class="faq-a">
+            <p>No prior belief is necessary. Many of Guru Ji's clients in the UK and Canada came with complete
+              scepticism. The remedies work on a cosmic and energy level that operates independently of personal
+              beliefs. An open mind is all that is needed.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            <span>How do I get started with a consultation?</span>
+            <i class="fa-solid fa-plus faq-arrow"></i>
+          </button>
+          <div class="faq-a">
+            <p>Simply call or WhatsApp Acharya Guru Ji using the contact details on this page. Available 24/7. You can
+              also fill in the contact form and Guru Ji will reach out within a few hours. The first consultation is
+              completely free.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     URGENCY CTA SECTION
+══════════════════════════════════════ -->
+  <section class="urgency-section reveal">
+    <canvas id="urgencyCanvas"></canvas>
+    <div class="urg-overlay"></div>
+    <div class="container urg-content">
+      <div class="urg-icon-wrap"><i class="fa-solid fa-hourglass-half"></i></div>
+      <p class="urg-eyebrow">⚠️ EVERY HOUR MATTERS</p>
+      <h2 class="urg-headline">Don't Let Your Loved One<br /><em>Drift Away Forever.</em></h2>
+      <p class="urg-sub">The longer you wait, the harder it becomes. The planetary window for healing your relationship
+        is <strong>open right now.</strong> Take action before it closes.</p>
+      <div class="urg-ctas">
+        <a href="tel:+447700000000" class="btn-urg-call">
+          <i class="fa-solid fa-phone-volume"></i> Call Guru Ji Right Now
+        </a>
+        <a href="https://wa.me/447700000000" target="_blank" class="btn-urg-wa">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp for Instant Help
+        </a>
+      </div>
+      <p class="urg-micro">
+        <i class="fa-solid fa-circle-check"></i> Free first consultation &nbsp;·&nbsp;
+        <i class="fa-solid fa-circle-check"></i> No obligation &nbsp;·&nbsp;
+        <i class="fa-solid fa-circle-check"></i> 100% Private
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     CONTACT FORM
+══════════════════════════════════════ -->
+  <section class="contact-section reveal" id="contact">
+    <div class="container">
+      <p class="eyebrow center"><i class="fa-solid fa-envelope-open-text"></i> FREE CONSULTATION</p>
+      <h2 class="sec-title center">Request Your Free Consultation</h2>
+      <div class="contact-grid">
+        <div class="contact-info-col">
+          <div class="cinfo-card">
+            <i class="fa-solid fa-phone-volume cinfo-ico"></i>
+            <div><strong>UK Phone / WhatsApp</strong><a href="tel:+447700000000">+44 7700 000000</a></div>
+          </div>
+          <div class="cinfo-card">
+            <i class="fa-solid fa-phone cinfo-ico"></i>
+            <div><strong>Canada Phone / WhatsApp</strong><a href="tel:+14161234567">+1 (416) 123-4567</a></div>
+          </div>
+          <div class="cinfo-card">
+            <i class="fa-solid fa-envelope cinfo-ico"></i>
+            <div><strong>Email</strong><a href="mailto:consult@acharyaguruji.com">consult@acharyaguruji.com</a></div>
+          </div>
+          <div class="cinfo-card">
+            <i class="fa-solid fa-clock cinfo-ico"></i>
+            <div><strong>Availability</strong><span>24 Hours · 7 Days a Week</span></div>
+          </div>
+          <div class="social-btns">
+            <a href="#" class="sbtn fb"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="sbtn ig"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/447700000000" target="_blank" class="sbtn wa"><i
+                class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="sbtn yt"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <div class="flags-row">
+            <span>🇬🇧 Serving United Kingdom</span>
+            <span>🇨🇦 Serving Canada</span>
+          </div>
+        </div>
+        <div class="contact-form-col">
+          <form class="cform" onsubmit="handleSubmit(event)">
+            <div class="form-two-col">
+              <div class="fg">
+                <label><i class="fa-solid fa-user"></i> Your Name *</label>
+                <input type="text" placeholder="Emily Smith" required />
+              </div>
+              <div class="fg">
+                <label><i class="fa-brands fa-whatsapp"></i> Phone / WhatsApp *</label>
+                <input type="tel" placeholder="+44 7700..." required />
+              </div>
+            </div>
+            <div class="fg">
+              <label><i class="fa-solid fa-envelope"></i> Email Address</label>
+              <input type="email" placeholder="your@email.com" />
+            </div>
+            <div class="fg">
+              <label><i class="fa-solid fa-heart-crack"></i> Your Situation *</label>
+              <select required>
+                <option value="">— Select your situation —</option>
+                <option>Get My Ex Back</option>
+                <option>Marriage / Divorce Problem</option>
+                <option>Partner Cheating</option>
+                <option>Relationship Conflict</option>
+                <option>Family Opposition</option>
+                <option>Lost Love</option>
+                <option>Negative Energy / Black Magic</option>
+                <option>Other Love Problem</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label><i class="fa-solid fa-comment"></i> Tell Guru Ji More (Optional)</label>
+              <textarea rows="4" placeholder="Briefly describe your situation in full confidence..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <i class="fa-solid fa-paper-plane"></i> Request Free Consultation
+            </button>
+            <p class="form-note"><i class="fa-solid fa-lock"></i> Your information is 100% private and GDPR/PIPEDA
+              compliant.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-emblem"><i class="fa-solid fa-star-and-crescent"></i></div>
+          <div class="logo-text">
+            <span class="logo-main">Acharya Guru Ji</span>
+            <span class="logo-sub">Vedic Astrologer</span>
+          </div>
+        </div>
+        <p>Ancient Vedic wisdom healing modern hearts. Trusted by thousands across United Kingdom &amp; Canada since
+          2009.</p>
+        <p class="footer-country">🇬🇧 United Kingdom &nbsp;·&nbsp; 🇨🇦 Canada</p>
+        <div class="footer-soc">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/447700000000" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4><i class="fa-solid fa-link"></i> Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Guru Ji</a>
+        <a href="#proof">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4><i class="fa-solid fa-star"></i> Services</h4>
+        <a href="#">Love Problem Solution</a>
+        <a href="#">Get Ex Back</a>
+        <a href="#">Marriage Issues</a>
+        <a href="#">Relationship Conflicts</a>
+        <a href="#">Kundli Analysis</a>
+        <a href="#">Negative Energy Removal</a>
+      </div>
+      <div class="footer-col">
+        <h4><i class="fa-solid fa-phone"></i> Contact Us</h4>
+        <p><i class="fa-solid fa-phone-volume"></i> UK: +44 7700 000000</p>
+        <p><i class="fa-solid fa-phone"></i> CA: +1 (416) 123-4567</p>
+        <p><i class="fa-solid fa-envelope"></i> consult@acharyaguruji.com</p>
+        <p><i class="fa-solid fa-clock"></i> Available 24 / 7</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Acharya Guru Ji. All rights reserved. &nbsp;|&nbsp; <a href="#privacy">Privacy Policy</a> &nbsp;|&nbsp;
+        <a href="#disclaimer">Disclaimer</a>
+      </p>
+      <p class="footer-disc-note">For spiritual guidance and entertainment purposes only. Results may vary.</p>
+    </div>
+  </footer>
+
+  <!-- Legal -->
+  <div class="legal-bar" id="disclaimer">
+    <div class="container">
+      <p><i class="fa-solid fa-scale-balanced"></i> <strong>Disclaimer:</strong> There are no guarantees that every
+        person using this service will achieve their desired results. Outcomes may vary from person to person and depend
+        on multiple factors.</p>
+    </div>
+  </div>
+  <div class="legal-bar" id="privacy" style="background:#020204;">
+    <div class="container">
+      <p><i class="fa-solid fa-shield-halved"></i> <strong>Privacy Policy (GDPR &amp; PIPEDA):</strong> Personal data
+        collected only when voluntarily provided. Never sold or shared. You may request deletion at any time:
+        consult@acharyaguruji.com. Minimal functional cookies only.</p>
+    </div>
+  </div>
+
+  <!-- ══ FLOATING WHATSAPP ══ -->
+  <a href="https://wa.me/447700000000?text=Hello%20Acharya%20Guru%20Ji%2C%20I%20need%20urgent%20help" target="_blank"
+    class="float-wa" id="floatWa" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="float-wa-pulse"></span>
+  </a>
+  <a href="https://wa.me/447700000000?text=Hello%20Acharya%20Guru%20Ji%2C%20I%20need%20urgent%20help" target="_blank"
+    class="float-wa float-i" id="floatin" aria-label="WhatsApp">
+    <i class="fa-brands fa-instagram"></i>
+    <span class="float-wa-pulse br-red"></span>
+  </a>
+
+  <!-- ══ STICKY MOBILE BAR ══ -->
+  <!-- <div class="sticky-mob" id="stickyMob">
+    <a href="tel:+447700000000" class="smob-call"><i class="fa-solid fa-phone"></i> Call Now</a>
+    <a href="https://wa.me/447700000000" target="_blank" class="smob-wa"><i class="fa-brands fa-whatsapp"></i>
+      WhatsApp</a>
+  </div> -->
+
+  <!-- ══ SUCCESS MODAL ══ -->
+  <div class="modal-bg" id="modalBg">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-star-ico"><i class="fa-solid fa-star"></i></div>
+      <h3>Thank You!</h3>
+      <p>Your request has been received. Guru Ji will contact you shortly.</p>
+      <a href="https://wa.me/447700000000" target="_blank" class="btn-wa-hero"
+        style="margin-top:1.2rem;display:inline-flex;">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp for Urgent Help
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
