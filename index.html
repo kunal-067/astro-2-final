@@ -32,16 +32,20 @@
   <header class="site-header" id="siteHeader">
     <div class="header-inner">
       <div class="logo">
-        <div class="logo-emblem">
-          <i class="fa-solid fa-star-and-crescent"></i>
+        <img src="./assets/ChatGPT Image May 7, 2026, 07_11_49 PM.png" alt="Acharya Guru Ji Logo" srcset="">
+
+        <div class="logo-emblem hidden">
+          <!-- <i class="fa-solid fa-star-and-crescent"></i> -->
+          <img src="./assets/ChatGPT Image May 7, 2026, 07_11_49 PM_CPY.png" alt="" srcset="">
         </div>
-        <div class="logo-text">
+        <div class="logo-text hidden">
           <span class="logo-main">Acharya Guru Ji</span>
           <span class="logo-sub">Vedic Astrologer</span>
         </div>
+
       </div>
       <nav class="main-nav">
-        <a href="./services/love-spell.html">Love Spell Services</a>
+        <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#proof">Reviews</a>
         <a href="#contact">Contact</a>
@@ -56,10 +60,66 @@
     </div>
   </header>
 
+  <div class="sol-strip" id="solStrip">
+    <div class="sol-strip-inner">
+
+      <span class="sol-strip-label">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        I Need Help With:
+      </span>
+
+      <div class="sol-strip-pills">
+
+        <a href="./services/breakup.html" class="ssp ssp-red">
+          <i class="fa-solid fa-heart-crack"></i>
+          <span>Breakup &amp; Lost Love</span>
+          <i class="fa-solid fa-chevron-right ssp-arr"></i>
+        </a>
+
+        <a href="./services/marriage.html" class="ssp ssp-rose">
+          <i class="fa-solid fa-ring"></i>
+          <span>Marriage Problems</span>
+          <i class="fa-solid fa-chevron-right ssp-arr"></i>
+        </a>
+
+        <a href="./services/divorce.html" class="ssp ssp-blue">
+          <i class="fa-solid fa-gavel"></i>
+          <span>Stop Divorce</span>
+          <i class="fa-solid fa-chevron-right ssp-arr"></i>
+        </a>
+
+        <a href="./services/love-spell.html" class="ssp ssp-purple">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span>Love Spell</span>
+          <i class="fa-solid fa-chevron-right ssp-arr"></i>
+        </a>
+
+        <!-- <a href="#services" class="ssp ssp-teal">
+          <i class="fa-solid fa-people-arrows"></i>
+          <span>Family Opposition</span>
+          <i class="fa-solid fa-chevron-right ssp-arr"></i>
+        </a> -->
+
+        <!-- <a href="#services" class="ssp ssp-gold">
+          <i class="fa-solid fa-scroll"></i>
+          <span>Kundli Analysis</span>
+          <i class="fa-solid fa-chevron-right ssp-arr"></i>
+        </a> -->
+
+      </div>
+
+      <a href="https://wa.me/447700000000" target="_blank" class="sol-strip-cta">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>Ask Guru Ji</span>
+      </a>
+
+    </div>
+  </div>
+
   <!-- Mobile Nav -->
   <div class="mobile-nav" id="mobileNav">
     <button class="mob-close" onclick="closeMobileNav()"><i class="fa-solid fa-xmark"></i></button>
-    <a href="./services/love-spell.html" onclick="closeMobileNav()">Love Spell Services</a>
+    <a href="#services" onclick="closeMobileNav()">Services</a>
     <a href="#about" onclick="closeMobileNav()">About Guru Ji</a>
     <a href="#proof" onclick="closeMobileNav()">Testimonials</a>
     <a href="#contact" onclick="closeMobileNav()">Contact</a>
@@ -79,9 +139,11 @@
     <div class="hero-nebula n3"></div>
     <div class="hero-vignette"></div>
 
-    <div class="heroCtnr">
+    <!-- <div class="heroCtnr"> -->
+    <div class="hero-two-col">
 
-      <div class="hero-content">
+      <!-- <div class="hero-content"> -->
+      <div class="hero-left">
         <div class="hero-pill">
           <i class="fa-solid fa-certificate"></i>
           Trusted by 10,000+ Clients &nbsp;🇬🇧 UK &nbsp;·&nbsp; 🇨🇦 Canada
@@ -112,7 +174,7 @@
         </div>
       </div>
 
-      <div class="astro-wheel-wrap" aria-hidden="true">
+      <!-- <div class="astro-wheel-wrap" aria-hidden="true">
         <div class="chakra-wrap" role="img" aria-label="Rotating Vedic astrology chakra with planetary orbits">
           <canvas id="chakra-canvas" width="480" height="480"></canvas>
 
@@ -126,8 +188,83 @@
             <span class="chakra-tooltip-desc" id="chakra-tt-desc"></span>
           </div>
         </div>
+      </div> -->
+
+      <div class="hero-right">
+        <p class="hero-solutions-label">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> WHAT CAN GURU JI SOLVE FOR YOU?
+        </p>
+        <div class="hero-sol-grid">
+
+          <a href="breakup.html" class="hero-sol-card hsc-red">
+            <div class="hsc-icon"><i class="fa-solid fa-heart-crack"></i></div>
+            <div class="hsc-body">
+              <h4>Breakup &amp; Lost Love</h4>
+              <p>Get your ex back — even if they've blocked you or moved on</p>
+            </div>
+            <div class="hsc-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="hsc-glow"></div>
+          </a>
+
+          <a href="marriage.html" class="hero-sol-card hsc-rose">
+            <div class="hsc-icon"><i class="fa-solid fa-ring"></i></div>
+            <div class="hsc-body">
+              <h4>Marriage Problems</h4>
+              <p>Restore harmony, love and trust in your marriage</p>
+            </div>
+            <div class="hsc-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="hsc-glow"></div>
+          </a>
+
+          <a href="divorce.html" class="hero-sol-card hsc-blue">
+            <div class="hsc-icon"><i class="fa-solid fa-gavel"></i></div>
+            <div class="hsc-body">
+              <h4>Stop Divorce</h4>
+              <p>Halt divorce proceedings even after papers have been filed</p>
+            </div>
+            <div class="hsc-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="hsc-glow"></div>
+          </a>
+
+          <a href="#services" class="hero-sol-card hsc-purple">
+            <div class="hsc-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <div class="hsc-body">
+              <h4>Negative Energy</h4>
+              <p>Remove black magic, evil eye and third-party interference</p>
+            </div>
+            <div class="hsc-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="hsc-glow"></div>
+          </a>
+
+          <a href="#services" class="hero-sol-card hsc-teal">
+            <div class="hsc-icon"><i class="fa-solid fa-people-arrows"></i></div>
+            <div class="hsc-body">
+              <h4>Family Opposition</h4>
+              <p>Overcome family barriers blocking your relationship</p>
+            </div>
+            <div class="hsc-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="hsc-glow"></div>
+          </a>
+
+          <a href="#services" class="hero-sol-card hsc-gold">
+            <div class="hsc-icon"><i class="fa-solid fa-scroll"></i></div>
+            <div class="hsc-body">
+              <h4>Kundli Analysis</h4>
+              <p>Reveal your love destiny &amp; compatibility</p>
+            </div>
+            <div class="hsc-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="hsc-glow"></div>
+          </a>
+
+        </div>
+        <div class="hero-sol-bottom">
+          <i class="fa-solid fa-circle-info"></i>
+          Not sure which applies? <a href="https://wa.me/447700000000" target="_blank">Tell Guru Ji your situation →</a>
+        </div>
       </div>
+
     </div>
+    <!-- </div> -->
 
     <div class="hero-scroll-hint">
       <span class="scroll-line"></span>
@@ -135,6 +272,134 @@
 
     </div>
   </section>
+
+
+  <!-- // whats app proof gallery strip -->
+  <section id="gallery-strip" class="gs-section">
+
+    <!-- Header -->
+    <div class="gs-header">
+      <!-- <span class="gs-eyebrow">
+        <span class="gs-eyebrow-dot"></span>
+        Our Gallery
+      </span>
+      <h2 class="gs-title">Moments of <em>Divine Guidance</em></h2> -->
+
+      <p class="eyebrow center"><i class="fa-solid fa-heart-crack"></i> Our Gallery</p>
+      <h2 class="sec-title center">Moments of Divine Guidance</h2>
+
+      <div class="gold-divider"></div>
+    </div>
+
+    <!-- Strip wrapper — overflow hidden clips the scrolling track -->
+    <div class="gs-strip-wrap">
+
+      <!-- Fade edges left and right -->
+      <div class="gs-fade gs-fade-left" aria-hidden="true"></div>
+      <div class="gs-fade gs-fade-right" aria-hidden="true"></div>
+
+      <!-- Scrolling track — duplicated for seamless loop -->
+      <div class="gs-track" id="gsTrack">
+
+        <!-- ── Original set ── -->
+        <div class="gs-item" onclick="gsOpenLightbox(0)" tabindex="0" role="button" aria-label="View image 1">
+          <img src="./assets/Whatsapp reviews/Review1.png" alt="Astrology consultation" loading="lazy">
+          <div class="gs-item-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+
+        <div class="gs-item" onclick="gsOpenLightbox(1)" tabindex="0" role="button" aria-label="View image 2">
+          <img src="./assets/Whatsapp reviews/Review2.png" alt="Vedic astrology reading" loading="lazy">
+          <div class="gs-item-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+
+        <div class="gs-item" onclick="gsOpenLightbox(2)" tabindex="0" role="button" aria-label="View image 3">
+          <img src="./assets/Whatsapp reviews/Review3.png" alt="Kundli matching" loading="lazy">
+          <div class="gs-item-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+
+        <div class="gs-item" onclick="gsOpenLightbox(3)" tabindex="0" role="button" aria-label="View image 4">
+          <img src="./assets/Whatsapp reviews/Review4.png" alt="Love problem solution" loading="lazy">
+          <div class="gs-item-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </div>
+        </div>
+
+
+        <!-- ── Duplicate set for seamless infinite loop ── -->
+        <div class="gs-item gs-clone" onclick="gsOpenLightbox(0)" tabindex="-1" aria-hidden="true">
+          <img src="./assets/Whatsapp reviews/Review1.png" alt="" loading="lazy">
+          <div class="gs-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gs-item gs-clone" onclick="gsOpenLightbox(1)" tabindex="-1" aria-hidden="true">
+          <img src="./assets/Whatsapp reviews/Review2.png" alt="" loading="lazy">
+          <div class="gs-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gs-item gs-clone" onclick="gsOpenLightbox(2)" tabindex="-1" aria-hidden="true">
+          <img src="./assets/Whatsapp reviews/Review3.png" alt="" loading="lazy">
+          <div class="gs-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gs-item gs-clone" onclick="gsOpenLightbox(3)" tabindex="-1" aria-hidden="true">
+          <img src="./assets/Whatsapp reviews/Review4.png" alt="" loading="lazy">
+          <div class="gs-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+      </div>
+      <!-- /gs-track -->
+
+    </div>
+    <!-- /gs-strip-wrap -->
+
+    <p style="text-align: center; margin-top: 7px; font-size: small;">Tap to view</p>
+  </section>
+
+
+  <!-- ── LIGHTBOX ── -->
+  <div class="gs-lightbox" id="gsLightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+
+    <!-- Dark backdrop -->
+    <div class="gs-lb-backdrop" onclick="gsCloseLightbox()"></div>
+
+    <!-- Main lightbox box -->
+    <div class="gs-lb-box">
+
+      <!-- Close button -->
+      <button class="gs-lb-close" onclick="gsCloseLightbox()" aria-label="Close lightbox">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Prev / Next -->
+      <button class="gs-lb-nav gs-lb-prev" onclick="gsLbNav(-1)" aria-label="Previous image">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="gs-lb-nav gs-lb-next" onclick="gsLbNav(1)" aria-label="Next image">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <!-- Image -->
+      <div class="gs-lb-img-wrap">
+        <img id="gsLbImg" src="" alt="" class="gs-lb-img">
+        <div class="gs-lb-spinner" id="gsLbSpinner">
+          <i class="fa-solid fa-star-and-crescent fa-spin"></i>
+        </div>
+      </div>
+
+      <!-- Counter + caption -->
+      <div class="gs-lb-footer">
+        <div class="gs-lb-counter">
+          <span id="gsLbCurrent">1</span> / <span id="gsLbTotal">8</span>
+        </div>
+        <div class="gs-lb-caption" id="gsLbCaption">Genuine Astro Guide</div>
+        <div class="gs-lb-dots" id="gsLbDots"></div>
+      </div>
+
+    </div>
+  </div>
 
 
   <!-- ══════════════════════════════════════
@@ -311,8 +576,8 @@
           <a href="https://wa.me/447700000000" target="_blank" class="svc-link">Get Help <i
               class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="svc-card featured">
-          <div class="svc-hot-badge">🔥 Most Popular</div>
+        <div class="svc-card">
+          <!-- <div class="svc-hot-badge">🔥 Most Popular</div> -->
           <div class="svc-icon"><i class="fa-solid fa-rotate-left"></i></div>
           <h3>Get Your Ex Back</h3>
           <p>Through cosmic alignment and personalised remedies, bring your loved one back — even if they've blocked you
@@ -359,7 +624,7 @@
   <!-- ══════════════════════════════════════
      HOW IT WORKS
 ══════════════════════════════════════ -->
-  <section class="how-section reveal">
+  <!-- <section class="how-section reveal">
     <div class="container">
       <p class="eyebrow center"><i class="fa-solid fa-wand-sparkles"></i> SIMPLE PROCESS</p>
       <h2 class="sec-title center">3 Steps to Reclaim Your Love</h2>
@@ -389,12 +654,12 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- ══════════════════════════════════════
      WHATSAPP PROOF — 6 SCREENSHOTS
 ══════════════════════════════════════ -->
-  <section class="wa-section reveal" id="proof">
+  <section class="wa-section reveal hidden" id="proof">
     <div class="container">
       <p class="eyebrow center"><i class="fa-brands fa-whatsapp"></i> REAL CLIENT MESSAGES</p>
       <h2 class="sec-title center">WhatsApp Proof — Real People, Real Results</h2>
@@ -714,7 +979,7 @@
   <!-- ══════════════════════════════════════
      VIDEO TESTIMONIALS
 ══════════════════════════════════════ -->
-  <section class="video-section reveal">
+  <section class="video-section reveal hidden">
     <div class="container">
       <p class="eyebrow center"><i class="fa-solid fa-clapperboard"></i> VIDEO TESTIMONIALS</p>
       <h2 class="sec-title center">Hear It Directly From Our Clients</h2>
@@ -729,8 +994,7 @@
             </div>
             <div class="vthumb-deco"><i class="fa-solid fa-star"></i></div>
             <div class="iframe-wrap">
-              <iframe width="560" height="315" src=""
-                title="YouTube video player" frameborder="0"
+              <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
@@ -750,9 +1014,8 @@
               <div class="play-circle"><i class="fa-solid fa-play"></i></div>
             </div>
             <div class="vthumb-deco"><i class="fa-solid fa-moon"></i></div>
-            <div class="iframe-wrap"> 
-              <iframe width="560" height="315" src=""
-                title="YouTube video player" frameborder="0"
+            <div class="iframe-wrap">
+              <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
@@ -773,8 +1036,7 @@
             </div>
             <div class="vthumb-deco"><i class="fa-solid fa-heart"></i></div>
             <div class="iframe-wrap">
-               <iframe width="560" height="315" src=""
-                title="YouTube video player" frameborder="0"
+              <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
@@ -791,6 +1053,48 @@
         actual client testimonial video URLs.</p> -->
     </div>
   </section>
+
+  
+  <!-- ===== VIDEO GALLERY ===== -->
+  <section id="videoGallery">
+    <div class="container">
+      <div class="center reveal">
+        <span class="section-tag">Client Stories</span>
+        <h2 class="section-title">Video Gallery</h2>
+        <div class="gold-divider"></div>
+      </div>
+
+      <div class="videoContainer">
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/TL9MtGAcPSI?autoplay=1&mute=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/QEpK-Y6dYlg" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/4dQKLcge2h0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/G5izhLgSwoM" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 
   <!-- ══════════════════════════════════════
      FOREIGN TOUR GALLERY
@@ -883,6 +1187,9 @@
     <div class="container">
       <p class="eyebrow center"><i class="fa-solid fa-comments"></i> CLIENT REVIEWS</p>
       <h2 class="sec-title center">Lives Transformed — In Their Own Words</h2>
+
+      <div class="mb-testi-ctnr">
+        
       <div class="testi-grid">
         <div class="testi-card">
           <div class="testi-top">
@@ -968,6 +1275,8 @@
             </div>
           </div>
         </div>
+      </div>
+
       </div>
     </div>
   </section>
