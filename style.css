@@ -4513,8 +4513,8 @@ button {
     right: -18px;
   }
   .carousel-item {
-    min-width: 320px;
-    width:100%
+    min-width: 280px;
+    width:100%;
     /* ensure cards are wide enough on mobile */
   }
    .dots{

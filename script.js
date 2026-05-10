@@ -1087,7 +1087,12 @@ if (xMark) {
 
 
 
-// carousel works by translating the container left and right, and keeping track of the current index. Dots are generated dynamically based on the number of testimonial cards, and clicking a dot jumps to that testimonial. The scrollTestimonials function handles the left/right navigation and updates the active dot accordingly.
+// carousel works by translating the container left and right,
+// supports:
+// - buttons
+// - dots
+// - mobile swipe gesture
+
 const carouselWrappers = document.querySelectorAll('.carousel-wrapper');
 
 carouselWrappers.forEach((wrapper) => {
@@ -1103,12 +1108,10 @@ carouselWrappers.forEach((wrapper) => {
 
   if (!carouselCards.length) return;
 
-  // Create dots
+  /* ---------------- DOTS ---------------- */
+
   carouselCards.forEach((c, i) => {
 
-    // const carousel = wrapper.querySelector('.carousel');
-    // if (!carousel) return;
-    // c.style.width = carousel.offsetWidth + "px";
     const dot = document.createElement("div");
     dot.classList.add("dot");
 
@@ -1126,6 +1129,8 @@ carouselWrappers.forEach((wrapper) => {
 
   const dots = wrapper.querySelectorAll(".dot");
 
+  /* ---------------- UPDATE ---------------- */
+
   function updateCarousel() {
 
     const cardWidth = carouselCards[0].offsetWidth + 24;
@@ -1142,39 +1147,87 @@ carouselWrappers.forEach((wrapper) => {
     }
   }
 
-  nextBtn.addEventListener("click", () => {
+  /* ---------------- BUTTONS ---------------- */
 
-    index++;
+  if (nextBtn) {
+    nextBtn.addEventListener("click", () => {
 
-    if (index >= carouselCards.length) {
-      index = 0;
+      index++;
+
+      if (index >= carouselCards.length) {
+        index = 0;
+      }
+
+      updateCarousel();
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener("click", () => {
+
+      index--;
+
+      if (index < 0) {
+        index = carouselCards.length - 1;
+      }
+
+      updateCarousel();
+    });
+  }
+
+  /* ---------------- MOBILE SWIPE ---------------- */
+
+  let startX = 0;
+  let currentX = 0;
+  let isDragging = false;
+
+  carouselTrack.addEventListener("touchstart", (e) => {
+
+    startX = e.touches[0].clientX;
+    isDragging = true;
+
+  });
+
+  carouselTrack.addEventListener("touchmove", (e) => {
+
+    if (!isDragging) return;
+
+    currentX = e.touches[0].clientX;
+
+  });
+
+  carouselTrack.addEventListener("touchend", () => {
+
+    if (!isDragging) return;
+
+    const diff = startX - currentX;
+
+    // swipe left
+    if (diff > 50) {
+
+      index++;
+
+      if (index >= carouselCards.length) {
+        index = carouselCards.length - 1;
+      }
+
+    }
+
+    // swipe right
+    else if (diff < -50) {
+
+      index--;
+
+      if (index < 0) {
+        index = 0;
+      }
+
     }
 
     updateCarousel();
+
+    isDragging = false;
+
   });
-
-  prevBtn.addEventListener("click", () => {
-
-    index--;
-
-    if (index < 0) {
-      index = carouselCards.length - 1;
-    }
-
-    updateCarousel();
-  });
-
-  // Auto slide
-  // setInterval(() => {
-
-  //   index++;
-
-  //   if (index >= carouselCards.length) {
-  //     index = 0;
-  //   }
-
-  //   updateCarousel();
-
-  // }, 6000);
 
 });
