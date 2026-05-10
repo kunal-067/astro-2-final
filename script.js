@@ -1136,7 +1136,7 @@ carouselWrappers.forEach((wrapper) => {
     const cardWidth = carouselCards[0].clientWidth +1;
 
     carouselTrack.style.transform =
-      `translateX(-${(index * cardWidth)+index*.25}px)`;
+      `translateX(-${(index * cardWidth)+index*.3}px)`;
 
     dots.forEach(dot => {
       dot.classList.remove("active");
