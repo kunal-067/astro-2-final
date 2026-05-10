@@ -9,7 +9,7 @@
    1. CUSTOM CURSOR
 ══════════════════════════════════════ */
 (function initCursor() {
-  const dot  = document.getElementById('cursorDot');
+  const dot = document.getElementById('cursorDot');
   const ring = document.getElementById('cursorRing');
   if (!dot || !ring) return;
   if (window.innerWidth < 768) return;
@@ -19,27 +19,27 @@
 
   document.addEventListener('mousemove', e => {
     mx = e.clientX; my = e.clientY;
-    dot.style.left  = mx + 'px';
-    dot.style.top   = my + 'px';
+    dot.style.left = mx + 'px';
+    dot.style.top = my + 'px';
   });
 
   function animateRing() {
     rx += (mx - rx) * 0.12;
     ry += (my - ry) * 0.12;
     ring.style.left = rx + 'px';
-    ring.style.top  = ry + 'px';
+    ring.style.top = ry + 'px';
     requestAnimationFrame(animateRing);
   }
   animateRing();
 
   document.querySelectorAll('a, button, .svc-card, .pain-card, .wa-card, .video-card').forEach(el => {
     el.addEventListener('mouseenter', () => {
-      ring.style.width  = '52px';
+      ring.style.width = '52px';
       ring.style.height = '52px';
       ring.style.borderColor = 'rgba(200,168,75,.9)';
     });
     el.addEventListener('mouseleave', () => {
-      ring.style.width  = '32px';
+      ring.style.width = '32px';
       ring.style.height = '32px';
       ring.style.borderColor = 'rgba(200,168,75,.6)';
     });
@@ -57,7 +57,7 @@
   let stars = [], W, H, frame = 0;
 
   function resize() {
-    W = canvas.width  = canvas.parentElement.offsetWidth  || window.innerWidth;
+    W = canvas.width = canvas.parentElement.offsetWidth || window.innerWidth;
     H = canvas.height = canvas.parentElement.offsetHeight || window.innerHeight;
     buildStars();
   }
@@ -67,13 +67,13 @@
     const count = Math.floor((W * H) / 2400);
     for (let i = 0; i < count; i++) {
       stars.push({
-        x:     Math.random() * W,
-        y:     Math.random() * H,
-        r:     Math.random() * 1.8 + 0.25,
+        x: Math.random() * W,
+        y: Math.random() * H,
+        r: Math.random() * 1.8 + 0.25,
         alpha: Math.random() * 0.75 + 0.1,
         speed: Math.random() * 0.5 + 0.04,
         phase: Math.random() * Math.PI * 2,
-        gold:  Math.random() < 0.57,    // 7% golden
+        gold: Math.random() < 0.57,    // 7% golden
         drift: (Math.random() - 0.5) * 0.18
       });
     }
@@ -121,7 +121,7 @@
   let particles = [], W, H, frame = 0;
 
   function resize() {
-    W = canvas.width  = canvas.parentElement.offsetWidth  || window.innerWidth;
+    W = canvas.width = canvas.parentElement.offsetWidth || window.innerWidth;
     H = canvas.height = canvas.parentElement.offsetHeight || window.innerHeight;
     buildParticles();
   }
@@ -131,11 +131,11 @@
     const count = 80;
     for (let i = 0; i < count; i++) {
       particles.push({
-        x:    Math.random() * W,
-        y:    Math.random() * H,
-        r:    Math.random() * 2 + 0.5,
-        vx:   (Math.random() - 0.5) * 0.3,
-        vy:   -Math.random() * 0.4 - 0.1,
+        x: Math.random() * W,
+        y: Math.random() * H,
+        r: Math.random() * 2 + 0.5,
+        vx: (Math.random() - 0.5) * 0.3,
+        vy: -Math.random() * 0.4 - 0.1,
         alpha: Math.random() * 0.6 + 0.1,
         gold: Math.random() < 0.4
       });
@@ -158,8 +158,8 @@
       p.y += p.vy;
 
       if (p.y < -5) { p.y = H + 5; p.x = Math.random() * W; }
-      if (p.x < -5)  p.x = W + 5;
-      if (p.x > W+5) p.x = -5;
+      if (p.x < -5) p.x = W + 5;
+      if (p.x > W + 5) p.x = -5;
     });
     requestAnimationFrame(draw);
   }
@@ -249,10 +249,10 @@ function closeMobileNav() {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
-      const el     = entry.target;
+      const el = entry.target;
       const target = parseInt(el.dataset.target, 10);
-      const dur    = 1800;
-      const start  = performance.now();
+      const dur = 1800;
+      const start = performance.now();
 
       function tick(now) {
         const progress = Math.min((now - start) / dur, 1);
@@ -275,7 +275,7 @@ function closeMobileNav() {
    8. FAQ ACCORDION
 ══════════════════════════════════════ */
 function toggleFaq(btn) {
-  const item   = btn.closest('.faq-item');
+  const item = btn.closest('.faq-item');
   const isOpen = item.classList.contains('open');
 
   // Close all open items
@@ -291,8 +291,8 @@ function toggleFaq(btn) {
 ══════════════════════════════════════ */
 function playVideo(card, src) {
   const iframeWrap = card.querySelector('.iframe-wrap');
-  const iframe     = card.querySelector('iframe');
-  const overlay    = card.querySelector('.vthumb-overlay');
+  const iframe = card.querySelector('iframe');
+  const overlay = card.querySelector('.vthumb-overlay');
   if (!iframeWrap || !iframe) return;
 
   iframe.src = src;
@@ -353,7 +353,7 @@ document.addEventListener('keydown', e => {
    12. SMOOTH SCROLL FOR ANCHOR LINKS
 ══════════════════════════════════════ */
 document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', function(e) {
+  a.addEventListener('click', function (e) {
     const id = this.getAttribute('href');
     if (id === '#') return;
     const target = document.querySelector(id);
@@ -396,34 +396,34 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function createParticle(x, y) {
-    const p    = document.createElement('div');
+    const p = document.createElement('div');
     const size = Math.random() * 5 + 2;
     const gold = Math.random() < 0.65;
-    const angle  = Math.random() * Math.PI * 2;
-    const speed  = Math.random() * 35 + 10;
-    const vx     = Math.cos(angle) * speed;
-    const vy     = Math.sin(angle) * speed - 20;
+    const angle = Math.random() * Math.PI * 2;
+    const speed = Math.random() * 35 + 10;
+    const vx = Math.cos(angle) * speed;
+    const vy = Math.sin(angle) * speed - 20;
 
     Object.assign(p.style, {
-      position:      'fixed',
-      left:          x + 'px',
-      top:           y + 'px',
-      width:         size + 'px',
-      height:        size + 'px',
-      borderRadius:  '50%',
-      background:    gold ? 'rgba(200,168,75,0.85)' : 'rgba(255,255,255,0.55)',
+      position: 'fixed',
+      left: x + 'px',
+      top: y + 'px',
+      width: size + 'px',
+      height: size + 'px',
+      borderRadius: '50%',
+      background: gold ? 'rgba(200,168,75,0.85)' : 'rgba(255,255,255,0.55)',
       pointerEvents: 'none',
-      zIndex:        '99980',
-      transform:     'translate(-50%,-50%)',
-      transition:    'all 0.7s cubic-bezier(.22,.68,0,1.2)',
-      willChange:    'transform, opacity'
+      zIndex: '99980',
+      transform: 'translate(-50%,-50%)',
+      transition: 'all 0.7s cubic-bezier(.22,.68,0,1.2)',
+      willChange: 'transform, opacity'
     });
 
     document.body.appendChild(p);
 
     requestAnimationFrame(() => {
       p.style.transform = `translate(calc(-50% + ${vx}px), calc(-50% + ${vy}px))`;
-      p.style.opacity   = '0';
+      p.style.opacity = '0';
     });
 
     setTimeout(() => p.remove(), 750);
@@ -441,7 +441,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
     items.forEach(item => {
-      const rect   = item.getBoundingClientRect();
+      const rect = item.getBoundingClientRect();
       const center = rect.top + rect.height / 2;
       const offset = (center - window.innerHeight / 2) * 0.08;
       item.style.backgroundPositionY = `calc(50% + ${offset}px)`;
@@ -534,14 +534,14 @@ document.addEventListener('DOMContentLoaded', () => {
 ══════════════════════════════════════ */
 (function initStaggeredReveal() {
   const groups = [
-    { parent: '.pain-grid',  child: '.pain-card'  },
-    { parent: '.svc-grid',   child: '.svc-card'   },
-    { parent: '.wa-grid',    child: '.wa-card'     },
-    { parent: '.testi-grid', child: '.testi-card'  },
-    { parent: '.why-grid',   child: '.why-card'    },
-    { parent: '.video-grid', child: '.video-card'  },
-    { parent: '.steps-row',  child: '.step-card'   },
-    { parent: '.stats-row',  child: '.stat-item'   },
+    { parent: '.pain-grid', child: '.pain-card' },
+    { parent: '.svc-grid', child: '.svc-card' },
+    { parent: '.wa-grid', child: '.wa-card' },
+    { parent: '.testi-grid', child: '.testi-card' },
+    { parent: '.why-grid', child: '.why-card' },
+    { parent: '.video-grid', child: '.video-card' },
+    { parent: '.steps-row', child: '.step-card' },
+    { parent: '.stats-row', child: '.stat-item' },
   ];
 
   groups.forEach(({ parent, child }) => {
@@ -550,7 +550,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const children = parentEl.querySelectorAll(child);
     children.forEach((el, i) => {
-      el.style.opacity   = '0';
+      el.style.opacity = '0';
       el.style.transform = 'translateY(35px)';
       el.style.transition = `opacity .6s ease ${i * 0.1}s, transform .6s ease ${i * 0.1}s`;
     });
@@ -558,7 +558,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver(entries => {
       if (entries[0].isIntersecting) {
         children.forEach(el => {
-          el.style.opacity   = '1';
+          el.style.opacity = '1';
           el.style.transform = 'translateY(0)';
         });
         observer.disconnect();
@@ -593,13 +593,13 @@ document.addEventListener('DOMContentLoaded', () => {
 (function initProgressBar() {
   const bar = document.createElement('div');
   Object.assign(bar.style, {
-    position:   'fixed',
-    top:        '0',
-    left:       '0',
-    height:     '3px',
-    width:      '0%',
+    position: 'fixed',
+    top: '0',
+    left: '0',
+    height: '3px',
+    width: '0%',
     background: 'linear-gradient(90deg, var(--gold-dim), var(--gold), var(--gold2))',
-    zIndex:     '99999',
+    zIndex: '99999',
     transition: 'width .1s linear',
     pointerEvents: 'none'
   });
@@ -621,22 +621,22 @@ document.addEventListener('DOMContentLoaded', () => {
 (function () {
   'use strict';
 
-  const canvas  = document.getElementById('chakra-canvas');
+  const canvas = document.getElementById('chakra-canvas');
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
   const W = 480, H = 480, CX = W / 2, CY = H / 2;
 
   /* ── Planet data ── */
   const PLANETS = [
-    { name: 'Sun',     sym: '☀',  desc: 'Soul & vitality',       col: '#FFC94D', r: 12, orbit: 82,  spd:  0.008,  a: 0 },
-    { name: 'Moon',    sym: '☽',  desc: 'Mind & emotions',       col: '#C8D8E8', r: 9,  orbit: 118, spd: -0.013,  a: 1.2 },
-    { name: 'Mars',    sym: '♂',  desc: 'Energy & passion',      col: '#E05040', r: 9,  orbit: 152, spd:  0.016,  a: 2.4 },
-    { name: 'Mercury', sym: '☿',  desc: 'Communication',         col: '#8ECFB0', r: 8,  orbit: 184, spd: -0.022,  a: 4.0 },
-    { name: 'Jupiter', sym: '♃',  desc: 'Wisdom & expansion',    col: '#E8A060', r: 13, orbit: 216, spd:  0.006,  a: 3.1 },
-    { name: 'Venus',   sym: '♀',  desc: 'Love & relationships',  col: '#F4A8C0', r: 10, orbit: 178, spd: -0.011,  a: 5.2 },
-    { name: 'Saturn',  sym: '♄',  desc: 'Karma & discipline',    col: '#C8B090', r: 11, orbit: 206, spd:  0.0045, a: 0.8 },
-    { name: 'Rahu',    sym: '☊',  desc: 'Karmic north node',     col: '#9090C8', r: 8,  orbit: 136, spd: -0.009,  a: 2.8 },
-    { name: 'Ketu',    sym: '☋',  desc: 'Spiritual liberation',  col: '#B0A090', r: 8,  orbit: 136, spd: -0.009,  a: 2.8 + Math.PI },
+    { name: 'Sun', sym: '☀', desc: 'Soul & vitality', col: '#FFC94D', r: 12, orbit: 82, spd: 0.008, a: 0 },
+    { name: 'Moon', sym: '☽', desc: 'Mind & emotions', col: '#C8D8E8', r: 9, orbit: 118, spd: -0.013, a: 1.2 },
+    { name: 'Mars', sym: '♂', desc: 'Energy & passion', col: '#E05040', r: 9, orbit: 152, spd: 0.016, a: 2.4 },
+    { name: 'Mercury', sym: '☿', desc: 'Communication', col: '#8ECFB0', r: 8, orbit: 184, spd: -0.022, a: 4.0 },
+    { name: 'Jupiter', sym: '♃', desc: 'Wisdom & expansion', col: '#E8A060', r: 13, orbit: 216, spd: 0.006, a: 3.1 },
+    { name: 'Venus', sym: '♀', desc: 'Love & relationships', col: '#F4A8C0', r: 10, orbit: 178, spd: -0.011, a: 5.2 },
+    { name: 'Saturn', sym: '♄', desc: 'Karma & discipline', col: '#C8B090', r: 11, orbit: 206, spd: 0.0045, a: 0.8 },
+    { name: 'Rahu', sym: '☊', desc: 'Karmic north node', col: '#9090C8', r: 8, orbit: 136, spd: -0.009, a: 2.8 },
+    { name: 'Ketu', sym: '☋', desc: 'Spiritual liberation', col: '#B0A090', r: 8, orbit: 136, spd: -0.009, a: 2.8 + Math.PI },
   ];
 
   /* ── Stars ── */
@@ -648,13 +648,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }));
 
   /* ── Zodiac signs ── */
-  const SIGNS = ['♈','♉','♊','♋','♌','♍','♎','♏','♐','♑','♒','♓'];
+  const SIGNS = ['♈', '♉', '♊', '♋', '♌', '♍', '♎', '♏', '♐', '♑', '♒', '♓'];
 
   let tick = 0;
 
   /* ── Helpers ── */
   function hexRgb(hex) {
-    return [parseInt(hex.slice(1,3),16), parseInt(hex.slice(3,5),16), parseInt(hex.slice(5,7),16)];
+    return [parseInt(hex.slice(1, 3), 16), parseInt(hex.slice(3, 5), 16), parseInt(hex.slice(5, 7), 16)];
   }
 
   /* ── Drawing functions ── */
@@ -692,9 +692,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function drawPetals(rot) {
     for (let i = 0; i < 12; i++) {
-      const a  = (i / 12) * Math.PI * 2 + rot;
-      const x1 = CX + Math.cos(a) * 38,  y1 = CY + Math.sin(a) * 38;
-      const x2 = CX + Math.cos(a) * 74,  y2 = CY + Math.sin(a) * 74;
+      const a = (i / 12) * Math.PI * 2 + rot;
+      const x1 = CX + Math.cos(a) * 38, y1 = CY + Math.sin(a) * 38;
+      const x2 = CX + Math.cos(a) * 74, y2 = CY + Math.sin(a) * 74;
       const cx1 = CX + Math.cos(a - 0.38) * 60, cy1 = CY + Math.sin(a - 0.38) * 60;
       const cx2 = CX + Math.cos(a + 0.38) * 60, cy2 = CY + Math.sin(a + 0.38) * 60;
       ctx.beginPath();
@@ -745,7 +745,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const ao = (i / 8) * Math.PI * 2;
       const ai = ao + Math.PI / 8;
       if (i === 0) ctx.moveTo(Math.cos(ao) * 64, Math.sin(ao) * 64);
-      else         ctx.lineTo(Math.cos(ao) * 64, Math.sin(ao) * 64);
+      else ctx.lineTo(Math.cos(ao) * 64, Math.sin(ao) * 64);
       ctx.lineTo(Math.cos(ai) * 30, Math.sin(ai) * 30);
     }
     ctx.closePath();
@@ -854,7 +854,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function lighten(hex, amt) {
     const [r, g, b] = hexRgb(hex);
-    return `rgb(${Math.min(255,r+Math.round(amt*100))},${Math.min(255,g+Math.round(amt*100))},${Math.min(255,b+Math.round(amt*100))})`;
+    return `rgb(${Math.min(255, r + Math.round(amt * 100))},${Math.min(255, g + Math.round(amt * 100))},${Math.min(255, b + Math.round(amt * 100))})`;
   }
 
   function drawAspectLines() {
@@ -901,20 +901,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── Tooltip on hover ── */
   const tooltip = document.getElementById('chakra-tooltip');
-  const ttName  = document.getElementById('chakra-tt-name');
-  const ttDesc  = document.getElementById('chakra-tt-desc');
+  const ttName = document.getElementById('chakra-tt-name');
+  const ttDesc = document.getElementById('chakra-tt-desc');
 
   canvas.addEventListener('mousemove', e => {
     const rect = canvas.getBoundingClientRect();
     const sx = W / rect.width, sy = H / rect.height;
     const mx = (e.clientX - rect.left) * sx;
-    const my = (e.clientY - rect.top)  * sy;
+    const my = (e.clientY - rect.top) * sy;
     const found = PLANETS.find(p => p._px && Math.hypot(mx - p._px, my - p._py) < p.r + 10);
     if (found) {
       ttName.textContent = found.name + ' ' + found.sym;
       ttDesc.textContent = found.desc;
       tooltip.style.left = ((found._px / sx)) + 'px';
-      tooltip.style.top  = ((found._py / sy)) + 'px';
+      tooltip.style.top = ((found._py / sy)) + 'px';
       tooltip.classList.add('show');
       canvas.style.cursor = 'pointer';
     } else {
@@ -939,22 +939,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── Update these src paths to match your actual image files ── */
   var GS_IMAGES = [
-    { src: './assets/Whatsapp reviews/Review1.png',                caption: '' },
-    { src: './assets/Whatsapp reviews/Review2.png',                caption: '' },
-    { src: './assets/Whatsapp reviews/Review3.png',                caption: '' },
-    { src: './assets/Whatsapp reviews/Review4.png',                caption: '' },
+    { src: './assets/Whatsapp reviews/Review1.png', caption: '' },
+    { src: './assets/Whatsapp reviews/Review2.png', caption: '' },
+    { src: './assets/Whatsapp reviews/Review3.png', caption: '' },
+    { src: './assets/Whatsapp reviews/Review4.png', caption: '' },
   ];
 
   /* ── DOM references ── */
-  var lightbox  = document.getElementById('gsLightbox');
-  var lbImg     = document.getElementById('gsLbImg');
+  var lightbox = document.getElementById('gsLightbox');
+  var lbImg = document.getElementById('gsLbImg');
   var lbSpinner = document.getElementById('gsLbSpinner');
   var lbCurrent = document.getElementById('gsLbCurrent');
-  var lbTotal   = document.getElementById('gsLbTotal');
+  var lbTotal = document.getElementById('gsLbTotal');
   var lbCaption = document.getElementById('gsLbCaption');
-  var lbDots    = document.getElementById('gsLbDots');
-  var track     = document.getElementById('gsTrack');
-  var lbIndex   = 0;
+  var lbDots = document.getElementById('gsLbDots');
+  var track = document.getElementById('gsTrack');
+  var lbIndex = 0;
 
   /* ── Guard: exit if lightbox not on page ── */
   if (!lightbox) return;
@@ -1007,7 +1007,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!data) return;
 
     /* Show spinner while loading */
-    if (lbImg)     lbImg.classList.add('loading');
+    if (lbImg) lbImg.classList.add('loading');
     if (lbSpinner) lbSpinner.classList.add('visible');
 
     var tempImg = new Image();
@@ -1023,7 +1023,7 @@ document.addEventListener('DOMContentLoaded', () => {
       void lbImg.offsetWidth;
 
       if (direction === 'right') lbImg.classList.add('slide-in-right');
-      if (direction === 'left')  lbImg.classList.add('slide-in-left');
+      if (direction === 'left') lbImg.classList.add('slide-in-left');
 
       /* Update counter */
       if (lbCurrent) lbCurrent.textContent = index + 1;
@@ -1039,7 +1039,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     tempImg.onerror = function () {
       if (lbSpinner) lbSpinner.classList.remove('visible');
-      if (lbImg)     lbImg.classList.remove('loading');
+      if (lbImg) lbImg.classList.remove('loading');
       if (lbCaption) lbCaption.textContent = 'Image not found — check your file path';
     };
 
@@ -1049,9 +1049,9 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ── Keyboard: Escape / Arrow keys ── */
   document.addEventListener('keydown', function (e) {
     if (!lightbox.classList.contains('open')) return;
-    if (e.key === 'Escape')     gsCloseLightbox();
+    if (e.key === 'Escape') gsCloseLightbox();
     if (e.key === 'ArrowRight') gsLbNav(1);
-    if (e.key === 'ArrowLeft')  gsLbNav(-1);
+    if (e.key === 'ArrowLeft') gsLbNav(-1);
   });
 
   /* ── Touch swipe support ── */
@@ -1083,3 +1083,98 @@ if (xMark) {
     if (bar) bar.style.display = 'none';
   });
 }
+
+
+
+
+// carousel works by translating the container left and right, and keeping track of the current index. Dots are generated dynamically based on the number of testimonial cards, and clicking a dot jumps to that testimonial. The scrollTestimonials function handles the left/right navigation and updates the active dot accordingly.
+const carouselWrappers = document.querySelectorAll('.carousel-wrapper');
+
+carouselWrappers.forEach((wrapper) => {
+
+  let index = 0;
+
+  const carouselCards = wrapper.querySelectorAll('.carousel-item');
+  const dotsContainer = wrapper.querySelector(".dots");
+  const carouselTrack = wrapper.querySelector('.carousel-track');
+
+  const nextBtn = wrapper.querySelector(".carousel-nav.right");
+  const prevBtn = wrapper.querySelector(".carousel-nav.left");
+
+  if (!carouselCards.length) return;
+
+  // Create dots
+  carouselCards.forEach((c, i) => {
+
+    // const carousel = wrapper.querySelector('.carousel');
+    // if (!carousel) return;
+    // c.style.width = carousel.offsetWidth + "px";
+    const dot = document.createElement("div");
+    dot.classList.add("dot");
+
+    if (i === 0) {
+      dot.classList.add("active");
+    }
+
+    dot.addEventListener("click", () => {
+      index = i;
+      updateCarousel();
+    });
+
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = wrapper.querySelectorAll(".dot");
+
+  function updateCarousel() {
+
+    const cardWidth = carouselCards[0].offsetWidth + 24;
+
+    carouselTrack.style.transform =
+      `translateX(-${index * cardWidth}px)`;
+
+    dots.forEach(dot => {
+      dot.classList.remove("active");
+    });
+
+    if (dots[index]) {
+      dots[index].classList.add("active");
+    }
+  }
+
+  nextBtn.addEventListener("click", () => {
+
+    index++;
+
+    if (index >= carouselCards.length) {
+      index = 0;
+    }
+
+    updateCarousel();
+  });
+
+  prevBtn.addEventListener("click", () => {
+
+    index--;
+
+    if (index < 0) {
+      index = carouselCards.length - 1;
+    }
+
+    updateCarousel();
+  });
+
+  // Auto slide
+  // setInterval(() => {
+
+  //   index++;
+
+  //   if (index >= carouselCards.length) {
+  //     index = 0;
+  //   }
+
+  //   updateCarousel();
+
+  // }, 6000);
+
+});
