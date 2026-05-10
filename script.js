@@ -1133,10 +1133,10 @@ carouselWrappers.forEach((wrapper) => {
 
   function updateCarousel() {
 
-    const cardWidth = carouselCards[0].clientWidth + 24;
+    const cardWidth = carouselCards[0].clientWidth +1;
 
     carouselTrack.style.transform =
-      `translateX(-${index * cardWidth}px)`;
+      `translateX(-${(index * cardWidth)+index*.25}px)`;
 
     dots.forEach(dot => {
       dot.classList.remove("active");

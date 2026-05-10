@@ -4486,13 +4486,15 @@ button {
 
   .carousel-track {
     display: flex;
-    gap: 24px;
+    gap: 0;
     transition: transform 0.7s cubic-bezier(.22, 1, .36, 1);
   }
 
   .carousel-item {
     flex: 0 0 100%;
     min-width: 100%;
+
+    flex-shrink: 0;
   }
   .carousel-nav {
     position: absolute;
