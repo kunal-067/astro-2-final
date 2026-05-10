@@ -4513,7 +4513,7 @@ button {
     right: -18px;
   }
   .carousel-item {
-    min-width: 300px;
+    min-width: 310px;
     width:100%;
     /* ensure cards are wide enough on mobile */
   }
