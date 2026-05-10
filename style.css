@@ -4481,14 +4481,19 @@ button {
 
   .carousel {
     overflow: hidden;
+    width: 100%;
   }
+
   .carousel-track {
     display: flex;
     gap: 24px;
     transition: transform 0.7s cubic-bezier(.22, 1, .36, 1);
-    will-change: transform;
   }
 
+  .carousel-item {
+    flex: 0 0 100%;
+    min-width: 100%;
+  }
   .carousel-nav {
     position: absolute;
     top: 50%;
@@ -4512,11 +4517,11 @@ button {
   .carousel-nav.right {
     right: -18px;
   }
-  .carousel-item {
+  /* .carousel-item {
     min-width: 310px;
     width:100%;
     /* ensure cards are wide enough on mobile */
-  }
+  /* }  */
    .dots{
       display:flex;
       justify-content:center;

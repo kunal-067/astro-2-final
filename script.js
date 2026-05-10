@@ -1133,7 +1133,7 @@ carouselWrappers.forEach((wrapper) => {
 
   function updateCarousel() {
 
-    const cardWidth = carouselCards[0].offsetWidth + 24;
+    const cardWidth = carouselCards[0].clientWidth + 24;
 
     carouselTrack.style.transform =
       `translateX(-${index * cardWidth}px)`;
