@@ -206,6 +206,7 @@
   padding: var(--pad);
   background: var(--bg1);
   position: relative;
+  overflow: hidden;
 }
 .problem-section::before {
   content: '';
@@ -639,7 +640,7 @@
 .legal-bar i { color: var(--gold-dim); margin-right: 3px; }
 
 /* ── FLOATING WA ── */
-.float-wa {
+/* .float-wa {
   position: fixed;
   bottom: 100px; right: 24px;
   z-index: 9990;
@@ -656,7 +657,7 @@
 .float-wa:hover { transform: scale(1.12); color: white; }
 .float-wa-pulse { position: absolute; inset: -6px; border-radius: 50%; border: 2px solid rgba(37,211,102,.4); animation: pulsePing 2s ease-out infinite; }
 @keyframes floatBounce { 0%,100% { box-shadow: 0 4px 25px rgba(37,211,102,.5); } 50% { transform: translateY(-6px); box-shadow: 0 12px 35px rgba(37,211,102,.7); } }
-@keyframes pulsePing { 0% { transform: scale(1); opacity: .8; } 100% { transform: scale(1.5); opacity: 0; } }
+@keyframes pulsePing { 0% { transform: scale(1); opacity: .8; } 100% { transform: scale(1.5); opacity: 0; } } */
 
 /* ── STICKY MOBILE BAR ── */
 .sticky-mob { position: fixed; bottom: 0; left: 0; right: 0; z-index: 9980; display: none; background: rgba(3,2,10,.97); border-top: 1px solid rgba(200,168,75,.18); padding: 10px 16px; gap: 10px; }
@@ -699,7 +700,7 @@ body.page-breakup .page-hero-nebula.pn1 { background: radial-gradient(circle, rg
   .main-nav, .header-call { display: none; }
   .hamburger { display: flex; }
   .sticky-mob { display: flex; }
-  .float-wa { bottom: 80px; }
+  /* .float-wa { bottom: 80px; } */
 }
 @media (max-width: 600px) {
   .causes-grid { grid-template-columns: 1fr; }

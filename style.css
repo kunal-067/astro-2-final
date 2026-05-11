@@ -1665,27 +1665,27 @@ button {
 
 .g2 {
   background: linear-gradient(145deg, #1a3a1a, #2a6030, #c8a84b22);
-  background-image: url('/assets/gallery/img-r-1.jpg');
+  background-image: url('./assets/gallery/img-r-1.jpg');
 }
 
 .g3 {
   background: linear-gradient(145deg, #2a1a3a, #5a2070, #c8a84b22);
-  background-image: url('/assets/gallery/img-c-1.jpg');
+  background-image: url('./assets/gallery/img-c-1.jpg');
 }
 
 .g4 {
   background: linear-gradient(145deg, #3a1a0a, #7a4020, #c8a84b22);
-  background-image: url('/assets/gallery/img-c-2.jpg');
+  background-image: url('./assets/gallery/img-c-2.jpg');
 }
 
 .g5 {
   background: linear-gradient(145deg, #0a2030, #104060, #c8a84b22);
-  background-image: url('/assets/gallery/img-c-3.jpg');
+  background-image: url('./assets/gallery/img-c-3.jpg');
 }
 
 .g6 {
   background: linear-gradient(145deg, #1a2a1a, #306030, #c8a84b22);
-  background-image: url('/assets/gallery/img-c-4.jpg');
+  background-image: url('./assets/gallery/img-c-4.jpg');
 }
 
 .gal-bg {
