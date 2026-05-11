@@ -1029,7 +1029,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (lbCurrent) lbCurrent.textContent = index + 1;
 
       /* Update caption */
-      if (lbCaption) lbCaption.textContent = data.caption || 'Genuine Astro Guide';
+      if (lbCaption) lbCaption.textContent = data.caption || 'Acharya Guruji';
 
       /* Update dots */
       document.querySelectorAll('.gs-lb-dot').forEach(function (d, i) {
